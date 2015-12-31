@@ -77,33 +77,7 @@ yoast_breadcrumb('<p id="breadcrumbs">','</p>');
 
 
 
-			<?php if(function_exists('wp_paginate')) {
-
-
-
-		wp_paginate();
-
-
-
-	}
-
-
-
-	else {
-
-
-
-		twentytwelve_content_nav( 'nav-below' );
-
-
-
-	}
-
-
-
-	?> 
-
-
+			<?php wpbeginner_numeric_posts_nav(); ?>
 
 		<?php else : ?>
 
