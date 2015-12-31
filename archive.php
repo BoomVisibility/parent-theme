@@ -89,7 +89,8 @@ endif;
 
 			endwhile;
 
-wp_paginate();
+wpbeginner_numeric_posts_nav();
+
 
 			?>
 
