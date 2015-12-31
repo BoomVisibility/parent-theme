@@ -18,24 +18,13 @@ get_header(); ?>
 				</h1>
 				<span class="divider"></span>
 			</header>
-			<?php if(function_exists('wp_paginate')) {
-				wp_paginate();
-				}
-				else {
-				twentytwelve_content_nav( 'nav-above' );
-				}
-			?> 
+		
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
 			<?php endwhile; ?>
-			<?php if(function_exists('wp_paginate')) {
-				wp_paginate();
-			}
-			else {
-			twentytwelve_content_nav( 'nav-below' );
-			}
-			?> 
+			<?php wpbeginner_numeric_posts_nav(); ?>
+
 			<?php else : ?>
 			<div id="primary" class="container page-content" role="main">
 				<article id="post-0" class="post no-results not-found">
