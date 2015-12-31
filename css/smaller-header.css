@@ -1,0 +1,59 @@
+
+
+header.smaller  #masthead .logo{
+	width: 150px;
+	height:52px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+body header.smaller{
+	  padding-top: 12px;
+  }
+
+body  header.smaller .navigation-container{
+	    height:30px;
+    }
+
+header.smaller #call-to-action{
+	    display: none;
+    }
+
+body header.smaller .navigation-primary{
+	    margin-top: 0;
+    }
+
+body header.smaller .navigation-primary li a{
+	        font-size: 22px;
+        }
+
+header.smaller ul.nav-menu > li > a{
+	padding-bottom: 25px;
+	padding-top:6px;
+}
+
+@media (min-width: 1000px) {
+
+body header.global{
+	position: fixed;
+	background:#fff;
+	  -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+} 
+
+
+body #main{
+
+	margin-top: 133px;
+
+}
+
+
+
+}
