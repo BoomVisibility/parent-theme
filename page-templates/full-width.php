@@ -31,5 +31,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 </div>
 </div>
-<?php if ( is_active_sidebar( 'sidebar-10' ) ) : ?><?php dynamic_sidebar( 'sidebar-10' ); ?><?php endif; ?>
 <?php get_footer(); ?>
