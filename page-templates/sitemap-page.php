@@ -64,6 +64,5 @@ foreach ($cats as $cat) {
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-	</div><!-- #wrapper -->
-<?php if ( is_active_sidebar( 'sidebar-10' ) ) : ?><?php dynamic_sidebar( 'sidebar-10' ); ?><?php endif; ?>		
+	</div><!-- #wrapper -->	
 <?php get_footer(); ?>
