@@ -30,5 +30,5 @@ get_header(); ?>
 	<?php dynamic_sidebar( 'sidebar-12' ); ?>				
 	</div><!-- #secondary -->			
 	<?php endif; ?>	</div>
-<?php if ( is_active_sidebar( 'sidebar-10' ) ) : ?><?php dynamic_sidebar( 'sidebar-10' ); ?><?php endif; ?>		
+		
 <?php get_footer(); ?>
