@@ -533,8 +533,9 @@ body #page .one-fourth{
 	text-align: center;
 }
 
-
-
+.half .entry-content{
+	        margin-bottom: 25px;
+}
 
 /* Dividers & Elements */
 
@@ -587,12 +588,13 @@ body #page .one-fourth{
   margin-left: 12px; }
 
 .date{
-	   font-size: 12px;
-  font-family: arial, sans-serif;
+font-size: 14px;
+font-family: arial, sans-serif;
+margin: 8px 0;
  }
  
  .half .entry-heading{
-	 margin-bottom: 25px;
+ margin-bottom: 25px;
  }
 
 /* =Footer
@@ -626,77 +628,47 @@ footer.global {
 
 
 footer h3.widget-title {
-
 	font-size: 2em;
-
 	font-weight: normal;
-
 	color: #fff;
-
 	padding-bottom: 20px;
-
 }
 
 
 footer, footer p{
-
 	font-size: 15px;
-
 	margin-top: 0;
 	line-height: 1.5;
-
 } 
 
 
 footer div.social-container {
-
 	margin-top: 20px;
-
 	clear: both;
-
 }
-
-
 
 footer.global ul.social {
-
 	display: table-cell;
-
 	padding-top: 6px;
-
 	width: 200px;
-
 }
-
-
 
 footer ul.social li {
-
 	display: inline-block;
-
 	position: relative;
-
 }
 
-
-      footer .social li.linkedin a {
-
+footer .social li.linkedin a {
         background-image: url(images/social/linkedin.png);
-
         background-size: 20px auto;
-
         background-position: 7px bottom; }
 
-      footer .social li.twitter a {
-
+footer .social li.twitter a {
         background-image: url(images/social/twitter.png);
-
         background-size: 30px auto; }
 
-      footer .social li.youtube a {
-
+footer .social li.youtube a {
         background-image: url(images/social/youtube.png);
-
         background-size: 15px auto; }
 
 footer a{
@@ -705,7 +677,6 @@ footer a{
 }
 
 /* Arrow only button */
-
 footer .gform_wrapper ul.gform_fields{
 	width: 200px;
 }
@@ -779,12 +750,9 @@ input[type="reset"].arrow-button {
 /* Home Page Styles */
 
 section {
-
   padding: 75px 0; }
 
- 
   section.extra-padding {
-
     padding: 150px 0; }
 
 #homeposts{
@@ -841,66 +809,34 @@ section {
 /* =slider styles
 -------------------------------------------------------------- */
 
-
-
 body #bx-slider-pager{
-
 	position: absolute;
-
 	text-align: center;
-
 	width: 100%;
-
 	z-index: 99;
-
 }
-
-
-
 
 body #bx-slider-pager a{
-
-		height: 7px;
-
+	height: 7px;
 	width: 7px;
-
 	opacity: .5;
-
 	margin:0 3px;
-
 	display: block;
-
 	text-indent: -9999px;
-
 	border-radius: 5px;
-
 	background:#fff;
-
 	outline:0;
-
 }
 
-
-
 body #bx-slider-pager a.active{
-
 	opacity: 1;
 }
 
-
-
 #bx-slider-pager .bx-pager-item,
-
-#bx-slider-pager .bx-controls-auto-item
-
- {
-
+#bx-slider-pager .bx-controls-auto-item{
 	display: inline-block;
-
 	*zoom: 1;
-
 	*display: inline;
-
 }
 
 .slideshow h1{
@@ -918,29 +854,18 @@ body #bx-slider-pager a.active{
 	display: block;
 }
 
-.slideshow h4{
-
-}
-
 .slideshow {
-
   position: relative;
-
   color: #fff;
   padding: 0;
    }
 
-  .slideshow .bx-wrapper .bx-viewport {
-
+.slideshow .bx-wrapper .bx-viewport {
     border: 0;
-
     box-shadow: none; }
 
-  .slideshow a {
-
+.slideshow a {
     color: #fff; }
-
-
 
   .slideshow .slide .slidecaption{
 	  position: absolute;
@@ -956,80 +881,51 @@ body #bx-slider-pager a.active{
    }
 
   .slideshow .slide {
-
     background-size: cover;
-
     background-position: top center;
-
     height: 700px;
-
     width: 100%;
-
     text-align: center;
-
     display: table; }
 
     .slideshow .slide p {
-
-      font-size: 29px;
-
+      font-size: 22px;
       max-width: 800px;
-
       margin: 0 auto 30px auto;
-
       line-height: 1.6; }
 
     .slideshow .slide .slide-link {
-
       font-size: 29px;
-
       display: block;
-
       margin-top: 75px;
-
-      letter-spacing: 2px;
-
+      letter-spacing: 1px;
       text-decoration: underline; }
 
   @media (max-width: 1200px) {
 
     .slideshow .slide {
-
       height: 600px; }
 
       .slideshow .slide h1 {
-
         font-size: 68px; }
 
       .slideshow .slide p {
-
         font-size: 26px; }
 
       .slideshow .slide .slide-link {
-
         margin-top: 50px; } }
+       
 
   @media (max-width: 860px) {
 
     .slideshow .slide {
-
       height: 600px; }
 
       .slideshow .slide h1 {
-
         font-size: 60px; }
 
       .slideshow .slide p {
-
-        font-size: 20px; } }
+        font-size: 20px; }
         
-        .date{
-	        font-size: 16px;
-	        margin: 8px 0;
-	    
-        }
-        
-        .half .entry-content{
-	        margin-bottom: 25px;
-        }
-
+  }
+       
