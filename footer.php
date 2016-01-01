@@ -11,6 +11,9 @@
  */
 ?>
 	</div><!-- #main .wrapper -->
+	
+	<?php if ( is_active_sidebar( 'sidebar-10' ) ) : ?><?php dynamic_sidebar( 'sidebar-10' ); ?><?php endif; ?>	
+
 	<footer class="global" role="contentinfo">
 	<div class="container">
 
