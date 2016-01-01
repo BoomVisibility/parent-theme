@@ -26,7 +26,7 @@ $color__link--hover: #630a0f;
 
 Break Points
 
-1000 pixels - Desktop
+1025 pixels - Desktop
 700 pixels - tablets
 480 pixels - mobile
 
@@ -74,7 +74,6 @@ Organization
 /* typography */
 
 body {
-
   font-size: 18px;
   font-family: arial, sans-serif;
   text-rendering: optimizeLegibility;
@@ -82,518 +81,303 @@ body {
   background-color: #fafbfc; }
   
   
-
-  
 /* Links */
-  
+ 
 a {
-
   color: #630a0f;
-
   text-decoration: none;
-
   -webkit-transition: all 0.2s ease-in-out;
-
   -moz-transition: all 0.2s ease-in-out;
-
   -ms-transition: all 0.2s ease-in-out;
-
   -o-transition: all 0.2s ease-in-out;
-
   transition: all 0.2s ease-in-out; }
 
-  a:after {
-
-    -webkit-transition: all 0.2s ease-in-out;
-
-    -moz-transition: all 0.2s ease-in-out;
-
-    -ms-transition: all 0.2s ease-in-out;
-
-    -o-transition: all 0.2s ease-in-out;
-
-    transition: all 0.2s ease-in-out; }
 
   a:hover {
-
-    color: #630a0f; }
-
-
+    color: #630a0f;
+    }
 
 p {
-
   font-size: 18px;
-
   line-height: 1.5;
-
-  margin: 1em 0;  }
-
-  p.extra-padding {
-
-    padding: 25px 0 50px 0; }
-
-  p.large {
-
-    font-size: 29px;
-
-    line-height: 1.5; }
+  margin: 1em 0;  
+}
 
   p a {
-
-    text-decoration: underline; }  
+    text-decoration: underline;
+    }  
 
 /* Sub Text */
 
 footer.entry-meta, .small {
-
   font-size: 11px;
   color: #666;
-  line-height: 2; }
+  line-height: 2;
+  }
 
 
 /* headers */
 
 h1 {
-
   font-family: times, serif;
-  font-size: 66px;
+  font-size: 45px;
   line-height: 1.2;
-  font-weight: 300; }
+  font-weight: 300;
+  }
   
-
-  h1.bordered {
-
-    border: 3px solid;
-
-    padding: 20px 30px;
-
-    display: inline-block; }
-    
-
-  h1.margin-bottom {
-
-    margin-bottom: 50px; }
-    
-
-  h1.medium {
-
-    font-size: 49px; }
-    
-    
 h2 {
-
   font-size: 35px;
+  margin: 30px 0;
+  }
 
-  margin: 30px 0; }
-  
-
- h2.page-subheading {
-
-    color: #7b7b7b;
-
-    font-weight: normal;
-
-    font-size: 49px; }
-
-.half h2{
-	margin-top: 0;
-}
 
 @media (max-width: 700px) {
 
-  body .wrapper h1 { 
+  body h1 { 
   font-size: 40px;
   }
 
-  body .wrapper h2, body .entry h2 { 
-  font-size: 36px;
+  body h2 { 
+  font-size: 30px;
   }
-
   }	
 
-  
-
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
 
   body .wrapper h1 { 
   font-size: 32px;
-
   }
-
-
 
   body .wrapper h2, body .entry h2 { 
-  font-size: 22px;
-
+  font-size: 24px;
   }
- 
-
   }	
 
-
   .entry-title a {
-
     text-decoration: none; }
 
 
-    
-
 /* images */
-
-
-
 
 @media screen and (max-width: 480px) {
 
-
-
   body img.alignright, img.alignleft {
-
     float: none;
-
-    margin: 3px auto;
-
-    display: block; } }
-
-
-
+    margin: 3px auto 10px auto;
+    display: block; 
+  }
+  }
 
 
 /* List Settings */
 
 ul li {
-
   list-style: none;
-
-  padding: 2.5% 0; }
+  padding: 2.5% 0; 
+}
   
 
 .entry-content ul,
-
 .comment-content ul,
-
 .mu_register ul {
-
-  list-style: disc inside; }
-
-
+  list-style: disc inside; 
+}
 
 .entry-content ol,
-
 .comment-content ol {
-
-  list-style: decimal inside; }
-
-
+  list-style: decimal inside; 
+}
 
 .entry-content li,
-
 .comment-content li,
-
 .mu_register li {
-
-  margin: 8px 36px 22px 36px; }
-
-
+  margin: 8px 36px 22px 36px; 
+}
 
 .entry-content blockquote,
-
 .comment-content blockquote {
-
   margin-bottom: 24px;
-
   padding: 24px;
-
-  font-style: italic; }
-
-
+  font-style: italic;
+  }
 
 .entry-content blockquote p:last-child,
-
 .comment-content blockquote p:last-child {
-
   margin-bottom: 0; }
 
-
-
 .entry-content pre code,
-
 .comment-content pre code {
-
   display: block; }
 
 
-  
 /* Buttons */
-
 input[type="submit"].arrow-button,
-
 input[type="button"].arrow-button,
-
 input[type="reset"].arrow-button {
-
   height: 30px;
-
   width: 30px;
-
   border: 0;
-
   display: inline-block;
-
   background: url(images/buttons/arrow-secondary.png) no-repeat center center;
-
-  background-size: 14px auto; }
+  background-size: 14px auto;
+  }
   
   .button, .learn-more {
-
   background-color: #630a0f;
-
   color: #fff;
-
   padding: 6px 15px;
-
   clear: both;
-
   display: inline-block;
-
   text-decoration: none;  }
 
   .button:hover {
-
     background-color: #12739f;
-
-    color: #fff; }
-
+    color: #fff; 
+  }
 
 .button-bordered {
-
   border: 3px solid;
-
   padding: 15px 30px;
-
-  font-size: 41px;
-
+  font-size: 24px;
   color: #fff;
-
   margin: 30px 0 0 0;
-
   display: inline-block; }
 
+
   .button-bordered:hover {
-
-    color: #000; }
-
-
+    color: #000; 
+  }
 
 
 /* table styles */
 
-
-.entry-content th,
-
-.comment-content th {
-
-  font-size: 11px;
-
-  line-height: 2.181818182;
-
-  font-weight: bold;
-
-  text-transform: uppercase;
-
-  color: #636363; }
-  
-  
-body.search-no-results #secondary .widget_search, body.error404 #secondary .widget_search	{
-	display: none;
-}
-	
-@media (max-width:1000px) {
-	.entry-content {
-		padding-bottom: 50px;
-	}
+#content table{
+	width: 100%;
+	margin-bottom: 20px;
 }
 
+#content table tr td{
+	background:#eee;
+	padding: 10px;
+}
+
+#content table tr th{
+	background: #084e8f;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px;
+}
 
 
 /* =2. Header
-
 -------------------------------------------------------------- */
-
 /* Global Header */
 
-
-
-
 #masthead {
-
   width: 300px;
   max-width: 100%;
   float: left; }
 
-
   #masthead .logo {
-
     width: 300px;
-
     max-width: 100%;
-
     height: 105px;
-
     background-image: url(images/logo.jpg);
-
     background-size: 100% auto;
-
     background-repeat: no-repeat;
-
     background-position: top center; 
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    
     }
 
-    
-
     #masthead .logo a {
-
       height: 100%;
-
       width: 100%;
-
       display: block; }
-
 
 
 @media (max-width: 700px) {
 
   #masthead {
-
     margin: 0 auto 15px auto;
-
     float: none; }
 
-    #masthead .logo {
-
+  #masthead .logo {
       background-position: top center; } 
 
   header.global {
-
     padding: 4% 2%; }
-
-
        }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
 
   header.global .navigation-container {
-
     width: 100%;
-
     display: block;
-
-
     text-align: center;
      }
      
      header.global .navigation-container #site-navigation{
-	      float: none;
+     float: none;
     clear: both;
      }
-
 }
 
 header.global {
-
   z-index: 9997;
-
   position: relative;
-
   width: 100%;
-
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-
   padding: 10px 20px 0 20px; 
-  
   -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-  
   }
   
   header.global #site-navigation {
-
     display: block;
-
     text-align: right;
-
   }
-
-
 
 
 /* 3. Columns Grids and Layouts */
 
-@media (max-width: 1000px) {
-
+@media (max-width: 1025px) {
 	      body .wrapper,body .container {
-
 	      padding-left:1%;
-
 	      padding-right: 1%;
-
       }
-
 }      
 
-
 .wrapper{
-
 max-width: 1000px;
-
   margin: 0 auto;
-
   padding-bottom: 110px;
-
 }
 
-
-
 .container {
-
   max-width: 1000px;
-
   margin: 0 auto;
-
   height: 100%; }
-  
-  
-  
 
   .container.small {
-
     max-width: 960px; }
     
-    
-    
+
 /* Minimum width of 700 pixels. */
 
 @media screen and (min-width: 700px) {
 
   #call-to-action {
-
     float: right;
-
     width: 35%;
-
     text-align: right;
-
     min-width: 300px;
-
     padding: 0; 
     margin-bottom: 10px;
     }
@@ -608,54 +392,33 @@ max-width: 1000px;
 	color: #939598;
 }
 
-  #logo {
-
+#logo {
     text-align: left;
-
     float: left;
-
     margin: 0;
-
     width: 45%; }
 
 
-
-
   .site {
-
     margin: 0 auto;
-
     overflow: hidden; }
 
 
-
   .site-content {
-
     float: left;
+    width: 75%; 
+  }
 
-    width: 75%; }
-
-	
 
 .page-content {
-
     float: left;
-
     width: 75%; 
-
-    
-
     }
 
-	
-
 .contact-content {
-
-		float: left;
-
-		width: 50%;
-
-	}
+float: left;
+width: 50%;
+}
 
 
 .contact-widget-area {
