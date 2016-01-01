@@ -404,100 +404,63 @@ max-width: 1000px;
     overflow: hidden; }
 
 
-  .site-content {
+.site-content, .page-content {
     float: left;
     width: 75%; 
   }
-
-
-.page-content {
-    float: left;
-    width: 75%; 
-    }
 
 .contact-content {
 float: left;
 width: 50%;
 }
 
-
 .contact-widget-area {
-
     float: right;
-
     width: 47.5%;
-
-	}
+}
 	    
-
-    .page-template #primary, .blog #primary, .category #primary, .search #primary, .single-post #primary, .page-template-default #primary{
-
+.page-template #primary, .blog #primary, .category #primary, .search #primary, .single-post #primary, .page-template-default #primary{
 	    border-right: 1px solid #b9b9b9;
-
     }
 
+.full-width.page-template #primary {
+border-right: 0;
+}
+
+body.template-front-page .site-content,
+body.single-attachment .site-content,
+body.full-width .site-content, body.template-front-page .page-content,
+body.single-attachment .page-content,
+body.full-width .page-content {
+    width: 100%;
 	
-	.full-width.page-template #primary {
-		border-right: 0;
-		}
-
-
-  body.template-front-page .site-content,
-
-  body.single-attachment .site-content,
-
-  body.full-width .site-content, body.template-front-page .page-content,
-
-  body.single-attachment .page-content,
-
-  body.full-width .page-content {
-
-    width: 100%; }
-
+}
 
 
   .widget-area {
-
     float: right;
-
     width: 22.5%; }
-
 }    
     
 
 @media screen and (max-width: 700px) {	
 
-
   .widget-area {
-
     padding: 0 25px;
-
-    width: 100%; }
-
-    
-
-     body #secondary {
-
-    padding: 0;
-
     width: 100%; 
+  }
 
+body #secondary {
+    padding: 0;
+    width: 100%; 
     margin: 0 auto;
-
     max-width: 300px;
-
     text-align: center;
-
     }
-
-    
-
-	}
+}
 
 
-
-
-/* ------- Fluid Columns ------- */
+/* ------- Layout Grid Columns ------- */
 .one_half{ width:48%; }
 .one_third{ width:30.66%; }
 .two_third{ width:65.33%; }
@@ -514,10 +477,9 @@ width: 50%;
 .clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
 
 
-/* =Grids
+/* =Page columns
 
 -------------------------------------------------------------- */
-
 
 .half {
   width: 50%;
@@ -532,22 +494,19 @@ width: 50%;
 
 
 .one-third {
-
   width: 33.333%;
   padding: 2%;
   float: left; }
 
 .two-thirds {
-
   width: 66%;
   padding: 2%;
   float: left; }
 
 
-@media (max-width: 1000px){
+@media (max-width: 1025px){
 body .half, body .one-third, body .two-thirds{
 	width: 100%;
-	
 }
 
 body.home .half, body.home .one-third, body.home .two-thirds {
@@ -565,17 +524,13 @@ body .one-fourth{
 body #page .one-fourth{
 	width: 100%;
 }
-
 }
 
 
 
 .one-fourth img, .two-third img, .one-third img, .half img  {
-
   	max-width: 100%;
-
 	text-align: center;
-
 }
 
 
@@ -584,13 +539,9 @@ body #page .one-fourth{
 /* Dividers & Elements */
 
 .divider {
-
   margin: 25px auto;
-
   display: block;
-
   height: 5px;
-
   background-color: #666;
  }
 
@@ -599,101 +550,43 @@ body #page .one-fourth{
 /* 4. Sidebar */
 
 .widget-area .widget {
-
   -webkit-hyphens: auto;
-
   -moz-hyphens: auto;
-
   hyphens: auto;
-
   margin-bottom: 48px;
-
   word-wrap: break-word; }
 
 
-
 .widget-area .widget h3 {
-
   margin-bottom: 24px;
-
   font-weight: normal;
   font-size: 30px;
-
    }
 
-
-
 .widget-area .widget p,
-
 .widget-area .widget li,
-
 .widget-area .widget .textwidget {
-
-  font-size: 13px;
-
-  line-height: 1.846153846; }
-
-
+  font-size: 15px;
+  line-height: 1.7; }
 
 .widget-area .widget p {
-
   margin-bottom: 24px; }
 
-
-
 .widget-area .textwidget ul {
-
   list-style: disc outside;
-
   margin: 0 0 24px; }
 
-
-
 .widget-area .textwidget li {
-
   margin-left: 36px; }
 
-
-
-.widget-area .widget a {
-
-  color: #757575; }
-
-
-
-.widget-area .widget a:hover {
-
-  color: #21759b; }
-
-
-
 .widget-area #s {
-
   width: 53.66666666666%;
-
   /* define a width to avoid dropping a wider submit button */ }
   
-
-
 .widget-area .widget ul ul {
-
   margin-left: 12px; }
 
-
-
-.widget_recent_entries .post-date
-
-.widget_rss .rss-date {
-
-  color: #aaa;
-
-  font-size: 12px;
-  font-family: arial, sans-serif;
-
-  margin-left: 12px; }
-
-
- half .date{
+.date{
 	   font-size: 12px;
   font-family: arial, sans-serif;
  }
@@ -703,7 +596,6 @@ body #page .one-fourth{
  }
 
 /* =Footer
-
 -------------------------------------------------------------- */
 
 #prefooter{
@@ -725,18 +617,12 @@ body #page .one-fourth{
 }
 
 footer.global {
-
   background: #630a0f;
   color: #fff;
-
   width: 100%;
-
   clear: both;
-
   padding: 50px 0px;
-
   box-sizing: border-box; }
-
 
 
 footer h3.widget-title {
