@@ -8,10 +8,8 @@
     }
  
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
 
-
-    
     .navigation-container .navigation-primary li {
       display: inline-block;
       position: relative; }
@@ -31,7 +29,6 @@
         margin: 0px 15px;
          }
     
-        
 .navigation-container .navigation-primary .sub-menu li a {
         font-size: 18px;
         margin: 5px 5px 10px 15px;
@@ -77,8 +74,6 @@ nav.navigation-primary li.current-menu-item > a {
 }
 
 
-
-
 .nav-menu .sub-menu,
 .nav-menu .children {
  	background-color: #fafbfc;
@@ -95,8 +90,8 @@ nav.navigation-primary li.current-menu-item > a {
     z-index: 9997;
     opacity: 0;
     visibility: hidden;
-	
 }
+
 ul#menu-primary-menu .sub-menu li a{
 	padding-left: 10px;
 	}
