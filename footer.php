@@ -12,7 +12,7 @@
 ?>
 	</div><!-- #main .wrapper -->
 	
-	<?php if ( is_active_sidebar( 'sidebar-10' ) ) : ?><?php dynamic_sidebar( 'sidebar-10' ); ?><?php endif; ?>	
+	<div id="prefooter"><?php if ( is_active_sidebar( 'sidebar-10' ) ) : ?><?php dynamic_sidebar( 'sidebar-10' ); ?><?php endif; ?></div>
 
 	<footer class="global" role="contentinfo">
 	<div class="container">
