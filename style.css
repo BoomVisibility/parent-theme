@@ -103,10 +103,6 @@ p {
   margin: 1em 0;  
 }
 
-  p a {
-    text-decoration: underline;
-    }  
-
 /* Sub Text */
 
 footer.entry-meta, .small {
@@ -222,7 +218,7 @@ input[type="reset"].arrow-button {
   background-size: 14px auto;
   }
   
-  .button, .learn-more {
+.button, .learn-more {
   background-color: #630a0f;
   color: #fff;
   padding: 6px 15px;
@@ -230,7 +226,7 @@ input[type="reset"].arrow-button {
   display: inline-block;
   text-decoration: none;  }
 
-  .button:hover {
+.button:hover {
     background-color: #12739f;
     color: #fff; 
   }
@@ -244,7 +240,7 @@ input[type="reset"].arrow-button {
   display: inline-block; }
 
 
-  .button-bordered:hover {
+.button-bordered:hover {
     color: #000; 
   }
 
