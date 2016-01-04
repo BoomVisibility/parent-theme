@@ -13,11 +13,11 @@
       		display: inline-block;
       		position: relative; }
       
-      .navigation-container .navigation-primary li:first-child{
+      	.navigation-container .navigation-primary li:first-child{
 	      margin-left: 25px;
 		 }
       
-       .navigation-container .navigation-primary li ul li:first-child{
+       	.navigation-container .navigation-primary li ul li:first-child{
 	       margin-left: 0;
 		 }
       
@@ -46,7 +46,7 @@
 		height: inherit;
 		width: inherit;
     		visibility: visible;
-		 opacity: 1;
+		opacity: 1;
     		border-top:1px solid #fff;
    		}
      
@@ -110,6 +110,13 @@
 		margin-bottom: 10px;
 		}
 }
+      
+/*!
+ * SlickNav Responsive Mobile Menu v1.0.3
+ * (c) 2015 Josh Cope
+ * licensed under MIT
+ */
+ 
 
 .slicknav_brand {
 	float: left;
@@ -126,12 +133,6 @@ header.global .navigation-primary .slicknav_nav li {
 header.global .navigation-primary .slicknav_nav li a {
 	margin: 0;
 	}
-      
-/*!
- * SlickNav Responsive Mobile Menu v1.0.3
- * (c) 2015 Josh Cope
- * licensed under MIT
- */
 
 .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
     	margin-top: 0.188em; }
@@ -198,7 +199,6 @@ a.slicknav_item.slicknav_row, ul.slicknav_nav .menu-item > a {
 	}
 
 header.global .navigation-primary .slicknav_nav li a {
-	/* width: 80%; */
 	line-height: 42px;
 	font-size: 22px;
 }
@@ -219,7 +219,6 @@ header.global .navigation-primary .slicknav_nav li .sub-menu a{
 
 .slicknav_nav li.menu-item{
 	border-bottom: 1px solid rgba(255,255,255,0.2);
-	/* margin-bottom: 10px; */
 }
 
 .slicknav_nav .slicknav_item {
@@ -291,7 +290,7 @@ header.global .navigation-primary .slicknav_nav li .sub-menu a{
 .slicknav_nav a {
     	padding: 5px 10px;
     	margin: 2px 5px;
-	 text-decoration: none;
+	text-decoration: none;
     	color: #eaeaea; 
     	font-size: 18px;
 	}
@@ -336,7 +335,6 @@ header.global .navigation-primary .slicknav_nav li .sub-menu a{
 	.slicknav_icon-bar + .slicknav_icon-bar {
 		margin-top: 0.188em;
 	}
-	
 }
 
 .slicknav_menu {
@@ -404,15 +402,12 @@ header.global .navigation-primary .slicknav_nav li .sub-menu a{
 	}
 }
 
-
-
 @media screen and (max-width: 1000px) {
 	.js #menu-primary-menu {
 		display:none;
-		
-	}
+		}
 	
 	.js .slicknav_menu {
 		display:block;
-	}
+		}
 }      
