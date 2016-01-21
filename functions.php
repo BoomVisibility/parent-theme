@@ -608,20 +608,6 @@ function custom_excerpt_length( $length ) {
 
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-/* Fix autop in Forms */
-add_filter('the_content', 'fix_autop');
-add_filter('the_excerpt', 'fix_autop');
-function fix_autop($content) {
-	$html = trim($content);
-	if ( $html === '' ) {
-		return '';	
-	}
-	$blocktags = 'form';
-	$html = preg_replace('~<p>\s*<('.$blocktags.')\b~i', '<$1', $html);
-	$html = preg_replace('~</('.$blocktags.')>\s*</p>~i', '</$1>', $html);
-	return $html;
-}
-
 //add columns shortcodes
 
 function webtreats_one_third( $atts, $content = null ) {
@@ -686,6 +672,11 @@ function webtreats_formatter($content) {
 	/* Divide content into pieces */
 	$pieces = preg_split($pattern_full, $content, -1, PREG_SPLIT_DELIM_CAPTURE);
 	
+	$html = trim($content);
+	if ( $html === '' ) {
+		return '';	
+	}
+	
 	/* Loop over pieces */
 	foreach ($pieces as $piece) {
 		/* Look for presence of the shortcode */
@@ -696,12 +687,21 @@ function webtreats_formatter($content) {
 		} else {
 			
 			/* Format and append to content */
-			$new_content .= wptexturize(wpautop($piece));		
+			$new_content .= wptexturize(wpautop($piece));
 		}
 	}
 	
+	$blocktags = 'form';
+	$html = preg_replace('~<p>\s*<('.$blocktags.')\b~i', '<$1', $html);
+	$html = preg_replace('~</('.$blocktags.')>\s*</p>~i', '</$1>', $html);
+	return $html;
+	
 	return $new_content;
 }
+ 
+// Before displaying for viewing, apply this function
+add_filter('the_content', 'webtreats_formatter', 99);
+add_filter('widget_text', 'webtreats_formatter', 99);
 
 // pagination on archive pages
 function wpbeginner_numeric_posts_nav() {
