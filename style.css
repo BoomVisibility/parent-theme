@@ -102,6 +102,9 @@ p {
   line-height: 1.5;
   margin: 1em 0;  
 }
+p:empty {
+	display: none;
+}
 
 /* Sub Text */
 
