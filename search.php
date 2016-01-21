@@ -25,17 +25,18 @@ get_header(); ?>
 			<?php endwhile; ?>
 			<?php wpbeginner_numeric_posts_nav(); ?>
 
-			<?php else : ?>
-			<div id="primary" class="container page-content" role="main">
-				<article id="post-0" class="post no-results not-found">
-					<div class="entry-content">
-						<header class="entry-header">
-							<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentytwelve' ); ?></h1>
-						</header>
-						<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'twentytwelve' ); ?></p>
-						<?php get_search_form(); ?>
-					</div><!-- .entry-content -->
-				</article><!-- #post-0 -->
+	<?php else : ?>
+	<div id="primary" class="page-content">
+		<div id="content" class="container" role="main">
+			<article id="post-0" class="post no-results not-found">
+				<div class="entry-content">
+					<header class="entry-header">
+						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentytwelve' ); ?></h1>
+					</header>
+					<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'twentytwelve' ); ?></p>
+					<?php get_search_form(); ?>
+				</div><!-- .entry-content -->
+			</article><!-- #post-0 -->
 			<?php endif; ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
