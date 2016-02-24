@@ -9,9 +9,11 @@ $(document).ready(function(){
 	  adaptiveHeight: false
   });
 
-    $('iframe').each(function(){
-        var url = $(this).attr("src");
-        $(this).attr("src",url+"?rel=0&wmode=transparent");
+    $('iframe[src*="youtube.com"]').each(function () {
+        var sVideoURL = $(this).attr('src');
+        if (sVideoURL.indexOf('rel=0') == -1) {
+            $(this).attr('src', sVideoURL + '?rel=0');
+        }
     });
     
     $('a[href$=".pdf"]').each(function() {
