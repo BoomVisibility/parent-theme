@@ -2,11 +2,6 @@
     float: right;
      }
 
-.navigation-container ..navigation-container {
-    display: table-cell; 
-    vertical-align: top;
-    }
-
 @media (min-width: 1025px) {
 
     	.navigation-container .navigation-primary li {
