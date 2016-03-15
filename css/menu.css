@@ -397,7 +397,7 @@ header.global .navigation-primary .slicknav_nav li .sub-menu a{
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1025px) {
 	.js #menu-primary-menu {
 		display:none;
 		}
