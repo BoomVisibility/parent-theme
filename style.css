@@ -711,11 +711,6 @@ footer .gform_wrapper ul li.gfield input{
 	height: 30px;
 }
 
-.gform_body{
-	float: left;
-	width: 200px;
-}
-
 footer .gform_wrapper:after{
 	clear: both;
 	content: " ";
