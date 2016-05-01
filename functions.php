@@ -516,9 +516,19 @@ add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
 
 function my_scripts_method() {
 	wp_enqueue_script(
+		'easing',
+		'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js',
+		array( 'jquery' ),
+		1.1,
+		true
+	);
+	
+	wp_enqueue_script(
 		'custom-slider',
 		get_stylesheet_directory_uri() . '/js/jquery.bxslider.min.js',
-		array( 'jquery' )
+		array( 'jquery' ),
+		1.1,
+		true
 	);
 
 	wp_enqueue_script(
@@ -532,26 +542,28 @@ function my_scripts_method() {
 	wp_enqueue_script(
 		'nav-menu',
 		get_stylesheet_directory_uri() . '/js/jquery.slicknav.js',
-		array( 'jquery' )
+		array( 'jquery' ),
+		1.1,
+		true
 	);
 	
 	wp_enqueue_script(
 		'modernizer',
 		get_stylesheet_directory_uri() . '/js/modernizr.min.js',
-		array( 'jquery' )
+		array( 'jquery' ),
+		1.1,
+		true
 	);
 
 	wp_enqueue_script(
 		'custom',
 		get_stylesheet_directory_uri() . '/js/custom.js',
-		array( 'jquery' )
+		array( 'jquery' ),
+		1.1,
+		true
 	);
 
-	wp_enqueue_script(
-		'easing',
-		'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js',
-		array( 'jquery' )
-	);
+	
 }
 
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
