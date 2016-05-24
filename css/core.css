@@ -296,21 +296,40 @@ img#wpstats {
   background: #fff;
   padding: 1px; }
 
-
-
 #imagelightbox-caption {
   position: fixed;
   z-index: 9999;
   color: #000;
   width: 100%;
   text-align: center;
-  top: 92%;
-  height: 8%;
-  padding-top: .25%;
-  line-height: 2;
-  background-color: #fff; }
+  top: 93%;
+  height: 7%;
+  padding: 15px 0;
+  padding: 2vh 0;
+  background-color: #fff;
+  font-size: 14px;
+}
 
+@media (max-width:767px) {
+#imagelightbox-caption {
+    top: 85%;
+    height: 15%;
+    padding: 15px 0;
+  }
+}
 
+@media (max-width:480px) {
+#imagelightbox-caption {
+    font-size: 12px;
+    line-height: 15px;
+    font-size: 3vw;
+    line-height: 4.5vw;
+    color: #242424;
+    z-index: 99999;
+    top: 90%;
+    height: 10%;
+  }
+}
 
 .imagelightbox-arrow {
   width: 28px;
