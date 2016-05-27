@@ -632,25 +632,25 @@ function webtreats_one_third_last( $atts, $content = null ) {
 }
 add_shortcode('one_third_last', 'webtreats_one_third_last');
  
-function webtreats_two_third( $atts, $content = null ) {
-   return '<div class="two_third">' . do_shortcode($content) . '</div>';
+function webtreats_two_thirds( $atts, $content = null ) {
+   return '<div class="two_thirds">' . do_shortcode($content) . '</div>';
 }
-add_shortcode('two_third', 'webtreats_two_third');
+add_shortcode('two_thirds', 'webtreats_two_thirds');
  
-function webtreats_two_third_last( $atts, $content = null ) {
-   return '<div class="two_third last">' . do_shortcode($content) . '</div><div class="clearboth"></div>';
+function webtreats_two_thirds_last( $atts, $content = null ) {
+   return '<div class="two_thirds last">' . do_shortcode($content) . '</div><div class="clearboth"></div>';
 }
-add_shortcode('two_third_last', 'webtreats_two_third_last');
+add_shortcode('two_thirds_last', 'webtreats_two_thirds_last');
  
 function webtreats_one_half( $atts, $content = null ) {
-   return '<div class="one_half">' . do_shortcode($content) . '</div>';
+   return '<div class="half">' . do_shortcode($content) . '</div>';
 }
-add_shortcode('one_half', 'webtreats_one_half');
+add_shortcode('half', 'webtreats_half');
  
-function webtreats_one_half_last( $atts, $content = null ) {
-   return '<div class="one_half last">' . do_shortcode($content) . '</div><div class="clearboth"></div>';
+function webtreats_half_last( $atts, $content = null ) {
+   return '<div class="half last">' . do_shortcode($content) . '</div><div class="clearboth"></div>';
 }
-add_shortcode('one_half_last', 'webtreats_one_half_last');
+add_shortcode('half_last', 'webtreats_half_last');
  
 function webtreats_one_fourth( $atts, $content = null ) {
    return '<div class="one_fourth">' . do_shortcode($content) . '</div>';
