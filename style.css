@@ -460,80 +460,49 @@ body #secondary {
 
 
 /* ------- Layout Grid Columns ------- */
-.one_half{ width:48%; }
-.one_third{ width:30.66%; }
-.two_third{ width:65.33%; }
-.one_fourth{ width:22%; }
-.three_fourth{ width:74%; }
-.one_fifth{ width:16.8%; }
-.two_fifth{ width:37.6%; }
-.three_fifth{ width:58.4%; }
-.four_fifth{ width:67.2%; }
-.one_sixth{ width:13.33%; }
-.five_sixth{ width:82.67%; }
-.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ position:relative; margin-right:4%; float:left; }
+.half{ width:50%; }
+.one_third{ width:33%; }
+.two_thirds{ width:67%; }
+.one_fourth{ width:25%; }
+.three_fourth{ width:75%; }
+.one_fifth{ width:20%; }
+.two_fifth{ width:40%; }
+.three_fifth{ width:60%; }
+.four_fifth{ width:80%; }
+.one_sixth{ width:16.66%; }
+.five_sixth{ width:83.33%; }
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ position:relative; box-sizing: border-box; padding: 2%; float:left; }
 .last{ margin-right:0 !important; clear:right; }
 .clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
 
-
-/* =Page columns
-
--------------------------------------------------------------- */
-
-.half {
-  width: 50%;
-  float: left;
-  padding: 2%;
-}
-
-.one-fourth {
-  width: 25%;
-  padding: 2%;
-  float: left; }
-
-
-.one-third {
-  width: 33.333%;
-  padding: 2%;
-  float: left; }
-
-.two-thirds {
-  width: 66%;
-  padding: 2%;
-  float: left; }
-
-
 @media (max-width: 1025px){
-body .half, body .one-third, body .two-thirds{
+body .half, body .one_third, body .two_thirds{
 	width: 100%;
 }
 
-body.home .half, body.home .one-third, body.home .two-thirds {
+body.home .half, body.home .one_third, body.home .two_thirds {
 	text-align: center;
 	margin: 0 auto;
 }
 
-body .one-fourth{
+body .one_fourth, body .one_fifth{
 	width: 50%;
 }
-
 }
 
 @media (max-width: 700px){
-body #page .one-fourth{
+body #page .one_fourth, body #page .one_fifth{
 	width: 100%;
 }
 }
 
-
-
-.one-fourth img, .two-third img, .one-third img, .half img  {
+.one_fourth img, .two_third img, .one_third img, .half img  {
   	max-width: 100%;
 	text-align: center;
 }
 
 .half .entry-content{
-	        margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 /* Dividers & Elements */
@@ -544,8 +513,6 @@ body #page .one-fourth{
   height: 5px;
   background-color: #666;
  }
-
-
 
 /* 4. Sidebar */
 
