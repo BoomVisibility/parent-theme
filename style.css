@@ -600,12 +600,11 @@ footer h3.widget-title {
 }
 
 
-footer, footer p{
+footer p{
 	font-size: 15px;
 	margin-top: 0;
 	line-height: 1.5;
-} 
-
+}
 
 footer div.social-container {
 	margin-top: 20px;
