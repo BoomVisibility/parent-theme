@@ -56,6 +56,21 @@
           webkitRequestAnimationFrame || msRequestAnimationFrame;
       if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
       else window.addEventListener('load', loadDeferredStyles);
-    </script> 
+    </script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#async=1"></script>
+<script type="text/javascript">
+	var addthisScript = document.createElement('script');
+        addthisScript.setAttribute('src', 'http://s7.addthis.com/js/300/addthis_widget.js#domready=1')
+        document.body.appendChild(addthisScript);
+    var addthis_config = addthis_config||{};
+        addthis_config.pubid = 'ra-540a43e10e38c182';
+</script>
+<script type="text/javascript">
+    // Call this function once the rest of the document is loaded
+    function loadAddThis() {
+        addthis.init()
+    }
+</script>
 </body>
 </html>
