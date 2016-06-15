@@ -45,8 +45,6 @@
 <?php } ?>
 </head>
 <body <?php body_class(); ?>>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54f3230657c608bf" async="async"></script>
 <div id="page" class="hfeed site">
 	<header class="global larger">
 		<div class="container">
