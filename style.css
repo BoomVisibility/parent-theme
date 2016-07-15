@@ -306,7 +306,7 @@ input[type="reset"].arrow-button {
       background-position: top center; } 
 
   header.global {
-    padding: 4% 2%; }
+    padding: 0; }
        }
 
 @media (max-width: 1025px) {
