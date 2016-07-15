@@ -295,6 +295,23 @@ input[type="reset"].arrow-button {
       width: 100%;
       display: block; }
 
+header.global {
+  z-index: 9997;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 10px 20px 0 20px; 
+  -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  header.global #site-navigation {
+    display: block;
+    text-align: right;
+  }
 
 @media (max-width: 700px) {
 
@@ -322,25 +339,6 @@ input[type="reset"].arrow-button {
     clear: both;
      }
 }
-
-header.global {
-  z-index: 9997;
-  position: relative;
-  width: 100%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  padding: 10px 20px 0 20px; 
-  -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  
-  header.global #site-navigation {
-    display: block;
-    text-align: right;
-  }
-
 
 /* 3. Columns Grids and Layouts */
 
