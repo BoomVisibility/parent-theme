@@ -4,9 +4,11 @@
 
 @media (min-width: 1025px) {
 
-    	.navigation-container .navigation-primary li {
+	.navigation-container .navigation-primary ul li {
       		display: inline-block;
-      		position: relative; }
+      		position: relative; 
+      		padding: 2.5% 0; 
+      		}
       
       	.navigation-container .navigation-primary li:first-child{
 	      margin-left: 25px;
@@ -21,6 +23,10 @@
         	position: relative;
         	display: inline-block;
         	margin: 0px 15px;
+         	}
+         	
+         .navigation-container .navigation-primary li:last-child a {
+        	margin: 0px 0px 0px 15px;
          	}
     
 	.navigation-container .navigation-primary .sub-menu li a {
