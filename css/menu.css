@@ -1,17 +1,14 @@
-.navigation-container #site-navigation {
-    float: right;
-     }
+.navigation-container #site-navigation { float: right; }
 
 @media (min-width: 1025px) {
-
 	.navigation-container .navigation-primary ul li {
 		display: inline-block;
       		position: relative; 
       		padding: 2.5% 0; }
-      
+	
+	.nav-menu{ position: relative; }
       	.navigation-container .navigation-primary li:first-child{ margin-left: 25px; }
-      
-       	.navigation-container .navigation-primary li ul li:first-child{ margin-left: 0; }
+	.navigation-container .navigation-primary li ul li:first-child{ margin-left: 0; }
       
       	.navigation-container .navigation-primary li a {
         	font-size: 20px;
@@ -28,8 +25,6 @@
         	display: inline-block;
         	width: 140px; }
         
-	.nav-menu{ position: relative; }
-
 	ul.nav-menu li:hover > ul, .nav-menu ul li:hover > ul, ul.nav-menu .focus > ul, .nav-menu .focus > ul {
   		clip: inherit;
   		overflow: inherit;
@@ -81,9 +76,7 @@
     		transition: all .5s ease;  
     		max-height: 60px; }
 		
-	.nav-menu .sub-menu li:last-child{
-		margin-bottom: 10px;
-		}
+	.nav-menu .sub-menu li:last-child{ margin-bottom: 10px; }
 }
       
 /*!
@@ -240,4 +233,4 @@ header.global .navigation-primary .slicknav_nav li .sub-menu a{
 @media screen and (max-width: 1025px) {
 	.js #menu-primary-menu {display:none; }
 	.js .slicknav_menu { display:block;}
-}      
+}
