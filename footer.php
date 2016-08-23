@@ -64,6 +64,7 @@
         addthisScript.setAttribute('src', 'http://s7.addthis.com/js/300/addthis_widget.js#domready=1')
         document.body.appendChild(addthisScript);
     var addthis_config = addthis_config||{};
+    	// This is the 'Generic Large' code for large sharing buttons
         addthis_config.pubid = 'ra-540a43e10e38c182';
 </script>
 <script type="text/javascript">
