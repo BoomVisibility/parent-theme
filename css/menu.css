@@ -152,7 +152,7 @@ header.global .navigation-primary .slicknav_nav li .sub-menu a{
 
 .slicknav_menu ul li.searchicon{ margin: 10px; }
 .slicknav_menu ul li.searchicon input[type="text"]{ height: 40px; width: 200px; }
-.slicknav_nav li.menu-item{ border-bottom: 1px solid rgba(255,255,255,0.2); }
+.slicknav_nav li.menu-item{ border-top: 1px solid rgba(255,255,255,0.2); }
 .slicknav_nav .slicknav_item { cursor: pointer; }
 .slicknav_nav .slicknav_item a, .slicknav_nav .slicknav_parent-link a  { display: inline; }
 .slicknav_nav .slicknav_row, .slicknav_nav a { display: block; }
