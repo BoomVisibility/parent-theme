@@ -132,7 +132,7 @@ h2 {
 @media (max-width: 480px) {
 	body .wrapper h1 { font-size: 32px; }
 	body .wrapper h2, body .entry h2 { font-size: 24px; }
-	body img.alignright, img.alignleft {
+	body img.alignright, img.alignleft, div.wp-caption.alignright, div.wp-caption.alignleft {
 		float: none;
 		margin: 3px auto 10px auto;
 		display: block; }
