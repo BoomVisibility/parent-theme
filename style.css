@@ -256,9 +256,10 @@ header.global #site-navigation {
 /* 3. Columns Grids and Layouts */
 
 @media (max-width: 1025px) {
-	body .wrapper,body .container {
+	.wrapper,.container {
 		padding-left:1%; padding-right: 1%; }
-}      
+	header .container {padding: 0;}
+}  
 
 .wrapper{ 
 	max-width: 1000px;
