@@ -140,7 +140,7 @@ h2 {
 
 /* List Settings */
 
-ul li { list-style: none; }
+ul { list-style: none; }
 .entry-content ul, .comment-content ul, .mu_register ul { list-style: disc; margin-left: 16px;}
 .entry-content ol, .comment-content ol { list-style: decimal;margin-left: 16px;}
 .entry-content blockquote, .comment-content blockquote {
