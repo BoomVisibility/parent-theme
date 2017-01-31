@@ -347,6 +347,8 @@ header.global #site-navigation {
 
 /* Even columns on Third and Fourth */
 @media (min-width: 1025px){
+	.half {padding: 2% 2% 2% 0;}
+	.half.last {padding: 2% 0% 2% 2%;}
 	.one_third {padding: 2% 1%;}
 	.one_third.last {padding: 2% 0% 2% 2%;}
 	.one_third:nth-of-type(4n+1) {padding: 2% 2% 2% 0%;}
