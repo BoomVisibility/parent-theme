@@ -345,6 +345,22 @@ header.global #site-navigation {
 	body #page .one_fourth, body #page .one_fifth{ width: 100%;}
 }
 
+/* Even columns on Third and Fourth */
+@media (min-width: 1025px){
+	.one_third {padding: 2% 1%;}
+	.one_third.last {padding: 2% 0% 2% 2%;}
+	.one_third:nth-of-type(4n+1) {padding: 2% 2% 2% 0%;}
+	.one_fourth.last {padding: 2% .25% 2% 1%;}
+	.one_fourth:nth-of-type(5n+1) {padding: 2% 1% 2% .25%;}
+	.one_fourth {padding: 2% .75%;}
+	}
+	
+@media (min-width: 700px) and (max-width: 1025px) {
+	.one_fourth:nth-of-type(5n+1), .one_fourth:nth-of-type(5n+3) {padding: 2% 2% 2% 0%;}
+	.one_fourth:nth-of-type(5n+2), .one_fourth.last {padding: 2% 0% 2% 2%;}
+	.one_fourth:nth-of-type(5n+3) {clear: both;}
+	}
+
 .one_fourth img, .two_third img, .one_third img, .half img  { max-width: 100%; text-align: center; }
 .half .entry-content{ margin-bottom: 25px; }
 
