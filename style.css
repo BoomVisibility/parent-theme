@@ -299,7 +299,7 @@ header.global #site-navigation {
 	
 	.page-template #primary, .blog #primary, .category #primary, .search #primary, .single-post #primary, .page-template-default #primary{
 		border-right: 1px solid #b9b9b9; }
-	.full-width.page-template #primary { border-right: 0; }
+	.full-width.page-template #primary { border-right: 0; padding-right: 0px; }
 
 	body.template-front-page .site-content, body.single-attachment .site-content, body.full-width .site-content, body.template-front-page .page-content, body.single-attachment .page-content, body.full-width .page-content {
 		width: 100%; }
