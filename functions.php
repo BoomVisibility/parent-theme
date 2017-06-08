@@ -645,12 +645,12 @@ add_shortcode('two_thirds_last', 'webtreats_two_thirds_last');
 function webtreats_one_half( $atts, $content = null ) {
    return '<div class="half">' . do_shortcode($content) . '</div>';
 }
-add_shortcode('half', 'webtreats_one_half');
+add_shortcode('one_half', 'webtreats_one_half');
  
 function webtreats_half_last( $atts, $content = null ) {
    return '<div class="half last">' . do_shortcode($content) . '</div><div class="clearboth"></div>';
 }
-add_shortcode('half_last', 'webtreats_half_last');
+add_shortcode('one_half_last', 'webtreats_half_last');
  
 function webtreats_one_fourth( $atts, $content = null ) {
    return '<div class="one_fourth">' . do_shortcode($content) . '</div>';
