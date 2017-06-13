@@ -593,6 +593,15 @@ if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'blog-thumb', 360, 360, true ); //(cropped)
 }
 
+add_filter('image_size_names_choose', 'my_image_sizes');
+	function my_image_sizes($sizes) {
+		$addsizes = array(
+		"blog-thumb" => __( "Blog Thumb")
+		);
+	$newsizes = array_merge($sizes, $addsizes);
+	return $newsizes;
+}
+
 
 function filter_ptags_on_images($content){
    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
