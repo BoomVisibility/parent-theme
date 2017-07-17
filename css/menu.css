@@ -262,6 +262,6 @@ header.global .navigation-primary .slicknav_nav li .sub-menu a{
 
 
 @media screen and (max-width: 1025px) {
-	.js #menu-main {display:none; }
+	.js #menu-primary-menu {display:none; }
 	.js .slicknav_menu { display:block;}
 }
