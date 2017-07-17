@@ -24,11 +24,11 @@ $(document).ready(function(){
     });
     
     $('#menu-primary-menu').slicknav({
-			label: 'Menu',
+			label: '',
 			duration: 300,
 			allowParentLinks: true,
 			closedSymbol: '&#43;',
-            openedSymbol: '&#8722;',
+            		openedSymbol: '&#8722;',
 			prependTo:'#site-navigation'
 	});
 });
