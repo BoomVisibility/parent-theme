@@ -275,8 +275,7 @@ header.global #site-navigation {
 
 @media screen and (min-width: 700px) {
 	#call-to-action {
-		float: right;
-		width: 35%;
+		width: 100%;
 		text-align: right;
 		min-width: 300px;
 		padding: 0; 
