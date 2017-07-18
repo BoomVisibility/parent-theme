@@ -63,6 +63,7 @@
 <div id="page" class="hfeed site">
 	<header class="global larger">
 		<div class="container">
+			<div class="mobile-menu"></div>
 			<div id="masthead">
 				<div class="logo">
 					<a href="<? echo site_url(); ?>"></a>
