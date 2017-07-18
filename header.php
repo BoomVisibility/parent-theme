@@ -24,8 +24,8 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/favicon-16x16.png" sizes="16x16" />
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -64,15 +64,15 @@
 	<header class="global larger">
 		<div class="container">
 			<div class="mobile-menu"></div>
+			<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+			<?php endif; ?>
 			<div id="masthead">
 				<div class="logo">
 					<a href="<? echo site_url(); ?>"></a>
 				</div>
 			</div> <!-- #masthead -->
 			<div class="navigation-container" role="navigation">
-				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-					<?php dynamic_sidebar( 'sidebar-2' ); ?>
-				<?php endif; ?>
 				<nav id="site-navigation" class="navigation-primary" role="navigation">
 				<ul id="menu-primary-menu" class="nav-menu">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
