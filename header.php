@@ -64,15 +64,15 @@
 	<header class="global larger">
 		<div class="container">
 			<div class="mobile-menu"></div>
-			<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-				<?php dynamic_sidebar( 'sidebar-2' ); ?>
-			<?php endif; ?>
 			<div id="masthead">
 				<div class="logo">
 					<a href="<? echo site_url(); ?>"></a>
 				</div>
 			</div> <!-- #masthead -->
 			<div class="navigation-container" role="navigation">
+				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+					<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				<?php endif; ?>
 				<nav id="site-navigation" class="navigation-primary" role="navigation">
 				<ul id="menu-primary-menu" class="nav-menu">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
