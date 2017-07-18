@@ -29,7 +29,7 @@ $(document).ready(function(){
 			allowParentLinks: true,
 			closedSymbol: '&#43;',
             		openedSymbol: '&#8722;',
-			prependTo:'#site-navigation'
+			prependTo:'.mobile-menu'
 	});
 });
 
