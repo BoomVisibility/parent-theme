@@ -143,6 +143,7 @@ h2 {
 ul { list-style: none; }
 .entry-content ul, .comment-content ul, .mu_register ul { list-style: disc; margin-left: 16px;}
 .entry-content ol, .comment-content ol { list-style: decimal;margin-left: 16px;}
+.entry-content ul li {line-height: 1.5;}
 .entry-content blockquote, .comment-content blockquote {
 	margin-bottom: 24px;
 	padding: 24px;
