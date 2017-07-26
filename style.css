@@ -331,7 +331,7 @@ header.global #site-navigation {
 .four_fifth{ width:80%; }
 .one_sixth{ width:16.66%; }
 .five_sixth{ width:83.33%; }
-.half,.one_third,.two_thirds,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ position:relative; box-sizing: border-box; padding: 2%; float:left; }
+.half,.one_third,.two_thirds,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ line-height: 1.5;position:relative; box-sizing: border-box; padding: 2%; float:left; }
 .last{ margin-right:0 !important; clear:right; }
 .clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
 
