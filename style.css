@@ -27,7 +27,7 @@ $color__link--hover: #630a0f;
 Break Points
 
 1025 pixels - Desktop
-700 pixels - tablets
+767 pixels - tablets
 480 pixels - mobile
 
 Organization
@@ -114,7 +114,6 @@ footer.entry-meta, .small {
 /* headers */
 
 h1 {
-	font-family: times, serif;
 	font-size: 45px;
 	line-height: 1.2;
 	font-weight: 300; }
@@ -124,7 +123,7 @@ h2 {
 	margin-bottom: 20px; }
 
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
 	body h1 { font-size: 40px; }
 	body h2 { font-size: 30px; }
 }	
@@ -248,7 +247,7 @@ header.global #site-navigation {
 		clear: both; }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
 	#masthead { margin: 0 auto 15px auto; float: none; }
 	#masthead .logo { background-position: top center; } 
 	header.global { padding: 0; }
@@ -274,7 +273,7 @@ header.global #site-navigation {
 
 .container.small { max-width: 960px; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 767px) {
 	#call-to-action {
 		width: 100%;
 		text-align: right;
@@ -305,7 +304,7 @@ header.global #site-navigation {
 		width: 100%; }
 }    
 
-@media screen and (max-width: 700px) {	
+@media screen and (max-width: 767px) {	
 	.widget-area {
 		padding: 0 25px;
 		width: 100%; }
