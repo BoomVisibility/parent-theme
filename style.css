@@ -33,28 +33,31 @@ Break Points
 Organization
 
 1. Content Styles
- - typography
- - headings
- - images
- - lists
- - tables
+ - Typography
+ - Links
+ - Headings
+ - Lists
  - Buttons
- 
+ - Tables
+
 2. Header formatting
- 
-3. Containers Grids and columns
+
+3. Containers Grids and Layouts
+ - Columns
+ - Dividers
 
 4. Sidebar formatting
- 
+
 5. footer formatting
 
 6. Home page
- 
- - slider styles
- - custom blocks
+ - Slider styles
+ - Custom blocks
 
 7. Page Formatting
  - Blog pages
+ - Pagination
+ - Default Page
  - Other templates
 
 8. Misc
@@ -67,9 +70,7 @@ Organization
 
 
 /* 1=Content Styles
-
 -------------------------------------------------------------- */
-
 /* typography */
 
 body {
@@ -78,8 +79,18 @@ body {
 	text-rendering: optimizeLegibility;
 	color: #565656;
 	background-color: #fafbfc; }
-  
-  
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 1em 0; }
+p:empty { display: none; }
+
+.date{
+	font-size: 14px;
+	font-family: arial, sans-serif;
+	margin: 8px 0; }
+
 /* Links */
  
 a {
@@ -93,25 +104,7 @@ a {
 a:hover { color: #630a0f; }
 .entry-title a { text-decoration: none; }
 
-p {
-	font-size: 18px;
-	line-height: 1.5;
-	margin: 1em 0; }
-p:empty { display: none; }
-
-.date{
-	font-size: 14px;
-	font-family: arial, sans-serif;
-	margin: 8px 0; }
-
-/* Sub Text */
-
-footer.entry-meta, .small {
-	font-size: 11px;
-	color: #666;
-	line-height: 2; }
-
-/* headers */
+/* Headings */
 
 h1 {
 	font-size: 45px;
@@ -132,9 +125,9 @@ h2 {
 	body .wrapper h1 { font-size: 32px; }
 	body .wrapper h2, body .entry h2 { font-size: 24px; }
 	body img.alignright, img.alignleft, div.wp-caption.alignright, div.wp-caption.alignleft {
-		float: none;
-		margin: 3px auto 10px auto;
-		display: block; }
+	float: none;
+	margin: 3px auto 10px auto;
+	display: block; }
 }
 
 /* List Settings */
@@ -182,7 +175,7 @@ input[type="submit"].arrow-button, input[type="button"].arrow-button, input[type
 	display: inline-block; }
 .button-bordered:hover { color: #000; }
 
-/* table styles */
+/* Table styles */
 
 #content table{ width: 100%; margin-bottom: 20px; }
 #content table tr td{ background:#eee; padding: 10px; }
@@ -256,8 +249,7 @@ header.global #site-navigation {
 /* 3. Columns Grids and Layouts */
 
 @media (max-width: 1025px) {
-	.wrapper,.container {
-		padding-left:1%; padding-right: 1%; }
+	.wrapper,.container {padding-left:1%; padding-right: 1%; }
 	header .container {padding: 0;}
 }  
 
@@ -272,6 +264,9 @@ header.global #site-navigation {
 	height: 100%; }
 
 .container.small { max-width: 960px; }
+
+section { padding: 75px 0; }
+section.extra-padding { padding: 150px 0; }
 
 @media screen and (min-width: 767px) {
 	#call-to-action {
@@ -304,7 +299,7 @@ header.global #site-navigation {
 		width: 100%; }
 }    
 
-@media screen and (max-width: 767px) {	
+@media (max-width: 767px) {	
 	.widget-area {
 		padding: 0 25px;
 		width: 100%; }
@@ -379,8 +374,9 @@ header.global #site-navigation {
   /* define a width to avoid dropping a wider submit button */ }
 .widget-area .widget ul ul { margin-left: 12px; }
 
-/* =Prefooter
+/* =5. Footer Section
 -------------------------------------------------------------- */
+/* Prefooter */
 
 #prefooter{ background-color: #dea23b; }
 #prefooter a{
@@ -395,8 +391,7 @@ header.global #site-navigation {
 	padding: 20px 0;
 	display: inline-block; }
 	
-/* =Footer
--------------------------------------------------------------- */
+/* Footer */
 
 footer.global {
 	background: #630a0f;
@@ -421,101 +416,13 @@ footer div.social-container {
 	margin-top: 20px;
 	clear: both; }
 
-footer.global ul.social {
-	display: table-cell;
-	padding-top: 6px;
-	width: 200px;
-}
-
-footer ul.social li {
-	display: inline-block;
-	position: relative;
-}
-
-footer .social li.linkedin a {
-	background-image: url(images/social/linkedin.png);
-	background-size: 20px auto;
-	background-position: 7px bottom; }
-
-footer .social li.twitter a {
-	background-image: url(images/social/twitter.png);
-	background-size: 30px auto; }
-
-footer .social li.youtube a {
-	background-image: url(images/social/youtube.png);
-	background-size: 15px auto; }
-
 footer a{
 	color: #fff;
 	text-decoration: underline; }
 
-footer .gform_wrapper ul.gform_fields{ 	width: 200px; }
-footer .gform_wrapper .top_label input.medium, footer .gform_wrapper .top_label select.medium{ width: 100%; line-height: 21px; }
-footer .gform_wrapper ul.gform_fields .gfield_label{ display: none; }
-body footer .gform_wrapper label.gfield_label + div.ginput_container{
-	margin-top:0;
-	font-size: 15px;
-	line-height: 25px; }
-
-footer .gform_wrapper{
-	width: 290px;
-	background: #fff;
-	display: table;
-	padding: 5px; }
-
-footer .gform_wrapper ul li.gfield{ padding: 0; }
-footer .gform_wrapper ul li.gfield input{ background: #fff; height: 30px; }
-footer .gform_wrapper:after{ clear: both; content: " "; }
-body footer .gform_wrapper .gform_footer{
-	clear:none;
-	width: 75px;
-	float: left;
-	margin-top: 0;
-	padding:0; }
-
-footer .gform_wrapper .gform_button, input[type="submit"].arrow-button, input[type="button"].arrow-button, input[type="reset"].arrow-button {
-	height: 30px;
-	width: 75px;
-	border: 0;
-	display: inline-block;
-	background: #630a0f;
-	color: #fff; }
-
-/* Home Page Styles */
-
-section { padding: 75px 0; }
-section.extra-padding { padding: 150px 0; }
-#homeposts{ 
-	background: #eee;
-	background-image: url(images/overlay.png);
-	background-repeat: no-repeat;
-	background-position: center center; }
-
-#mission h1{
-	display: inline-block;
-	border-bottom: 4px solid #630a0f;
-	color: #630a0f; }
-
-#mission p {font-size: 22px; }
-
-/* =pagination styles
+/* =6. Home Page Styles
 -------------------------------------------------------------- */
-
-.navigation li { display: inline; }
-.navigation li a, .navigation li a:hover, .navigation li.active a, .navigation li.disabled {
-	color: #fff;
-	text-decoration:none; }
-
-.navigation li a, .navigation li a:hover, .navigation li.active a, .navigation li.disabled {
-	background-color: #6FB7E9;
-	border-radius: 3px;
-	cursor: pointer;
-	padding: 12px;
-	padding: 0.75rem; }
-.navigation li a:hover, .navigation li.active a { background-color: #3C8DC5; }
-
-/* =slider styles
--------------------------------------------------------------- */
+/* Slideshow */
 
 .slideshow {
 	position: relative;
@@ -559,3 +466,44 @@ section.extra-padding { padding: 150px 0; }
 	max-width: 800px;
 	margin: 0 auto 30px auto;
 	line-height: 1.6; }
+
+/* Custom Blocks */
+
+#homeposts{ 
+	background: #eee;
+	background-image: url(images/overlay.png);
+	background-repeat: no-repeat;
+	background-position: center center; }
+
+#mission h1{
+	display: inline-block;
+	border-bottom: 4px solid #630a0f;
+	color: #630a0f; }
+
+#mission p {font-size: 22px; }
+
+/* =7. Additional Page styles
+-------------------------------------------------------------- */
+/* Blog Page styles */
+
+
+
+/* Pagination */
+
+.navigation li { display: inline; }
+.navigation li a, .navigation li a:hover, .navigation li.active a, .navigation li.disabled {
+	color: #fff;
+	text-decoration:none; }
+
+.navigation li a, .navigation li a:hover, .navigation li.active a, .navigation li.disabled {
+	background-color: #6FB7E9;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 12px;
+	padding: 0.75rem; }
+.navigation li a:hover, .navigation li.active a { background-color: #3C8DC5; }
+
+/* Default Page styles */
+
+/* =8. Misc
+-------------------------------------------------------------- */
