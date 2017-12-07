@@ -5,17 +5,15 @@
  */
 
 get_header(); ?>
-
-<div class="header-divider"></div>
+<header class="entry-header">
+	<h1 class="page-title"><?php the_title(); ?></h1>
+</header>
 <div class="wrapper">
 	<?php if ( function_exists('yoast_breadcrumb') ) {
 	yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
 	<div>
 		<div id="content" role="main">
 			<div class="entry-content">
-				<header class="entry-header">
-					<h1 class="page-title"><?php the_title(); ?></h1>
-				</header>
 				<h2 id="pages">Pages</h2>								
 				<ul>
 					<?php
