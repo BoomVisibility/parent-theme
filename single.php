@@ -7,17 +7,16 @@
  * @since Twenty Twelve 1.0
  */
 get_header(); ?>
-
+<header class="entry-header">
+	<h1 class="page-title"><?php the_title(); ?></h1>
+	<div class="date"><?php the_time('F j, Y');?></div>
+	<?php if ( function_exists('yoast_breadcrumb') ) {
+		yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+	} ?>
+</header>
 <div class="wrapper">
 	<div id="primary" class="site-content">
 		<div id="content" class="container small" role="main">
-		<header class="entry-header">
-			<h1 class="page-title"><?php the_title(); ?></h1>
-			<div class="date"><?php the_time('F j, Y');?></div>
-			<?php if ( function_exists('yoast_breadcrumb') ) {
-				yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-			} ?>
-		</header>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <div class="addthis_sharing_toolbox" data-url="<?php the_permalink(); ?>" data-title="<?php the_title(); ?>"></div>
