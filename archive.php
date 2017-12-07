@@ -17,14 +17,8 @@
  * @since Twenty Twelve 1.0
  */
 get_header(); ?>
-
-<div class="wrapper archive-page">
-	<?php if ( have_posts() ) : ?>			
-	<section id="primary" class="site-content">
-		<div id="content" class="container small" role="main">
-
-<header class="archive-header">				
-<h1 class="archive-title">
+<header class="entry-header">				
+<h1 class="entry-title">
 <?php					
 if ( is_day() ) : printf( __( 'Daily Archives: %s', 'twentytwelve' ), '<span>' . get_the_date() . '</span>' );
 elseif ( is_month() ) :	printf( __( 'Monthly Archives: %s', 'twentytwelve' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'twentytwelve' ) ) . '</span>' );
@@ -32,7 +26,12 @@ elseif ( is_year() ) : printf( __( 'Yearly Archives: %s', 'twentytwelve' ), '<sp
 else : _e( 'Archives', 'twentytwelve' );
 endif;
 ?></h1>
-</header><!-- .archive-header -->
+</header><!-- .entry-header -->
+<div class="wrapper archive-page">
+	<?php if ( have_posts() ) : ?>			
+	<section id="primary" class="site-content">
+		<div id="content" class="container small" role="main">
+
 
 			<?php
 			/* Start the Loop */
