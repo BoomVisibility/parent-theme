@@ -8,16 +8,12 @@
  */
 
 get_header(); ?>
-
+<header class="entry-header">
+	<h1 class="entry-title">
+</header>
 <div class="wrapper search-page"><?php if ( have_posts() ) : ?>
 	<div id="primary" class="page-content">
 		<div id="content" class="container" role="main">		
-			<header class="archive-header">
-				<h1 class="archive-title">
-					<?php printf( __( 'Search Results for: %s', 'twentytwelve' ), '<span>' . get_search_query() . '</span>' ); ?>
-				</h1>
-				<span class="divider"></span>
-			</header>
 		
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
