@@ -13,15 +13,14 @@
  */
 
 get_header(); ?>
-
+<header class="page-header">
+	<h1 class="page-title"><?php the_title(); ?></h1>
+</header><!-- .entry-header -->
 	<div id="primary" class="page-content below-nav">
 		<div id="content" class="container" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 			<?php endwhile; // end of the loop. ?>
-			<header class="page-header">
-				<h1 class="page-title"><?php the_title(); ?></h1>
-			</header><!-- .entry-header -->
 
 			<? if(get_field('name_1')) { ?>
 			<div class="entry-content-row">
