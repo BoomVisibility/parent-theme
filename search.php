@@ -10,6 +10,8 @@
 get_header(); ?>
 <header class="entry-header">
 	<h1 class="entry-title">
+		<?php printf( __( 'Search Results for: %s', 'twentytwelve' ), '<span>' . get_search_query() . '</span>' ); ?>
+	</h1>
 </header>
 <div class="wrapper search-page"><?php if ( have_posts() ) : ?>
 	<div id="primary" class="page-content">
