@@ -13,14 +13,13 @@
  */
 
 get_header(); ?>
-<div class="header-divider"></div>
+<header class="entry-header">
+	<h1 class="page-title"><?php the_title(); ?></h1>
+</header>
 <div class="wrapper">
 	<div id="primary" class="page-content">
 		<div id="content" class="container" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<header class="entry-header">
-					<h1 class="page-title"><?php the_title(); ?></h1>
-				</header>
 				<?php if ( function_exists('yoast_breadcrumb') ) {
 					yoast_breadcrumb('<p id="breadcrumbs">','</p>');
 					} ?>
@@ -29,9 +28,9 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 	<?php if ( is_active_sidebar( 'sidebar-11' ) ) : ?>
-	<div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-11' ); ?>				
-	</div><!-- #secondary -->			
+		<div id="secondary" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'sidebar-11' ); ?>				
+		</div><!-- #secondary -->			
 	<?php endif; ?>	
 </div>
 <?php get_footer(); ?>
