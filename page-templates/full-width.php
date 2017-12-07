@@ -15,16 +15,13 @@
  */
 
 get_header(); ?>
+<header class="entry-header">
+	<h1 class="page-title"><?php the_title(); ?></h1>
+</header>
 <div class="wrapper">
 	<div id="primary" class="page-content">
 		<div id="content" class="container" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<header class="entry-header">
-					<h1 class="page-title"><?php the_title(); ?></h1>
-					<?php if ( function_exists('yoast_breadcrumb') ) {
-					yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-					} ?>
-				</header>
 				<?php get_template_part( 'content', 'page' ); ?>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- #content -->
