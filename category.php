@@ -12,24 +12,20 @@
  */
 get_header(); ?>
 
+<header class="entry-header">
+	<h1 class="entry-title">
+		<?php printf( __( 'Category: %s', 'twentytwelve' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
+	</h1>
+</header><!-- .entry-header -->
 <div class="wrapper category-page">
 	<div id="primary" class="site-content">
 		<div id="content" class="container" role="main">
 		<?php if ( have_posts() ) : ?>
-
-<header class="archive-header">
-<h1 class="archive-title">
-<?php printf( __( 'Category: %s', 'twentytwelve' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
-</h1>
-
-<?php if ( category_description() ) : // Show an optional category description ?>
-<div class="archive-meta">
-<?php echo category_description(); ?>
-</div>
-<?php endif; ?>
-
-</header><!-- .archive-header -->
-
+			<?php if ( category_description() ) : // Show an optional category description ?>
+				<div class="archive-meta">
+					<?php echo category_description(); ?>
+				</div>
+			<?php endif; ?>
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
@@ -41,16 +37,11 @@ get_header(); ?>
 			endwhile;
 			wpbeginner_numeric_posts_nav();
 			?>
-
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 		<?php endif; ?>
 		</div><!-- #content -->
-
 	</div><!-- #primary -->
-
 <?php get_sidebar(); ?>
-
 </div>
-
 <?php get_footer(); ?>
