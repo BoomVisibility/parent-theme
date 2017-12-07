@@ -8,13 +8,12 @@
  */
 
 get_header(); ?>
-
+<header class="entry-header">
+	<h1 class="entry-title"><?php _e( '404 Page Not Found', 'twentytwelve' ); ?></h1>
+</header>
 <div class="wrapper">
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
-				<header class="entry-header">
-					<h1 class="entry-title"><?php _e( '404 Page Not Found', 'twentytwelve' ); ?></h1>
-				</header>
 			<article id="post-0" class="post error404 no-results not-found">
 				<div class="entry-content">
 					<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentytwelve' ); ?></p>
