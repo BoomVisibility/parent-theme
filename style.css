@@ -345,13 +345,12 @@ section.extra-padding { padding: 150px 0; }
 .last{ margin-right:0 !important; clear:right; }
 .clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
 @media (max-width: 1025px){
-	body .half, body .one_third, body .two_thirds{ width: 100%;margin: 0 auto;}
-	body.home .half, body.home .one_third, body.home .two_thirds { text-align: center; margin: 0 auto; }
-	body .one_fourth, body .one_fifth{ width: 48%; }
+	.half, .one_third, .two_thirds{ width: 100%;margin: 0 auto;}
+	.one_fourth, .one_fifth{ width: 48%; }
 }
 
 @media (max-width: 767px){
-	body #page .one_fourth, body #page .one_fifth{ width: 100%;margin: 0 auto;}
+	.one_fourth, .one_fifth{ width: 100%;margin: 0 auto;}
 }
 
 .one_fourth img, .two_third img, .one_third img, .half img  { max-width: 100%; text-align: center; }
