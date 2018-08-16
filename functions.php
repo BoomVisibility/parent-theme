@@ -580,6 +580,7 @@ register_post_type('slides', array(
 'capability_type' => 'post',
 'hierarchical' => false,
 'rewrite' => false,	'query_var' => true,
+'menu_icon' => 'dashicons-images-alt2',
 'exclude_from_search' => true,
 'supports' => array('title', 'editor', 'thumbnail'),
 'taxonomies' => array( 'post_tag')
