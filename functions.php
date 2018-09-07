@@ -586,6 +586,22 @@ register_post_type('slides', array(
 'taxonomies' => array( 'post_tag')
 ));
 
+/**custom post type for testimonials*/
+
+register_post_type('testimonials', array(
+'label' => __('Testimonials'),
+'singular_label' => __('Testimonial'),
+'public' => true,
+'show_ui' => true,
+'capability_type' => 'post',
+'hierarchical' => false,
+'rewrite' => false,	'query_var' => true,
+'menu_icon' => 'dashicons-testimonial',
+'exclude_from_search' => true,
+'supports' => array('title', 'editor', 'thumbnail'),
+'taxonomies' => array( 'post_tag')
+));
+
 /**add slider thumbnail size*/
 
 if ( function_exists( 'add_image_size' ) ) { 
