@@ -105,29 +105,28 @@ a:hover { color: #630a0f; }
 .entry-title a { text-decoration: none; }
 
 /* Headings */
+h1, h2, h3, h4, h5, h6 {line-height: 1.2;}
+h1 {font-size: 45px;}
+h2 {font-size: 35px;}
+h3 {font-size: 28px;}
+h4 {font-size: 22px;}
+h5 {font-size: 18px;}
+h6 {font-size: 16px;}
 
-h1 {
-	font-size: 45px;
-	line-height: 1.2;
-	font-weight: 300; }
-  
-h2 {
-	font-size: 35px;
-	margin-bottom: 20px; }
-
-
-@media (max-width: 767px) {
-	body h1 { font-size: 40px; }
-	body h2 { font-size: 30px; }
-}	
+@media (max-width: 1025px) {
+	h1 {font-size: 40px;}
+	h2 {font-size: 30px;}
+	h3 {font-size: 22px;}
+	h4 {font-size: 20px;}
+}
 
 @media (max-width: 480px) {
-	body .wrapper h1 { font-size: 32px; }
-	body .wrapper h2, body .entry h2 { font-size: 24px; }
+	h1 {font-size: 32px;}
+	h2 {font-size: 24px;}
 	body img.alignright, img.alignleft, div.wp-caption.alignright, div.wp-caption.alignleft {
-	float: none;
-	margin: 3px auto 10px auto;
-	display: block; }
+		float: none;
+		margin: 3px auto 10px auto;
+		display: block; }
 }
 
 /* List Settings */
