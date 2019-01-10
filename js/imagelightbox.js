@@ -109,37 +109,41 @@
         hasFullscreenSupport = fullscreenSupport() !== false,
         hasHistorySupport = !!(window.history && history.pushState);
 
-        $.fn.imageLightbox = function (opts) {
-            var targetSet = '',
-                targets = $([]),
-                target = $(),
-                targetIndex = -1,
-                origTargets = $(this),
-                image = $(),
-                imageWidth = 0,
-                imageHeight = 0,
-                swipeDiff = 0,
-                inProgress = false,
-                currentIndex = 0,
-                options = $.extend({
+    $.fn.imageLightbox = function (opts) {
+        var targetSet = '',
+            targets = $([]),
+            target = $(),
+            targetIndex = -1,
+            origTargets = $(this),
+            image = $(),
+            imageWidth = 0,
+            imageHeight = 0,
+            swipeDiff = 0,
+            inProgress = false,
+            currentIndex = 0,
+            options = $.extend({
                 selector:       'a[data-imagelightbox]',
                 id:             'imagelightbox',
-                allowedTypes:   'png|jpg|jpeg|gif', // TODO make it work again
+                allowedTypes:   'png|jpg|jpeg|gif',
                 animationSpeed: 250,
                 activity:       false,
                 arrows:         true,
                 button:         true,
                 caption:        true,
                 enableKeyboard: true,
-                lockBody:       false,
+                history:        false,
+                fullscreen:     false,
+                gutter:         10,     // percentage of client height
+                offsetY:        0,      // percentage of gutter
                 navigation:     true,
                 overlay:        true,
                 preloadNext:    true,
                 quitOnEnd:      true,
                 quitOnImgClick: false,
-                quitOnDocClick: false,
+                quitOnDocClick: true,
                 quitOnEscKey:   true
             }, opts),
+
             _onStart = function () {
                 if (options.arrows) {
                     arrowsOn(this);
