@@ -350,6 +350,7 @@ section.extra-padding { padding: 150px 0; }
 
 @media (max-width: 767px){
 	.one_fourth, .one_fifth{ width: 100%;margin: 0 auto;}
+	.one_fourth:nth-child(even), .one_fifth:nth-child(even){margin-right: 0;margin-bottom: 10px;}
 }
 
 .one_fourth img, .two_third img, .one_third img, .half img  { max-width: 100%; text-align: center; }
