@@ -132,7 +132,7 @@ h6 {font-size: 16px;}
 /* List Settings */
 
 ul { list-style: none; }
-.entry-content ul, .comment-content ul, .mu_register ul { list-style: disc; margin-left: 16px;}
+.entry-content ul, .comment-content ul, .mu_register ul { list-style: disc; margin: 0 0 16px 16px;}
 .entry-content ol, .comment-content ol { list-style: decimal;margin-left: 16px;}
 .entry-content ul li, .entry-content ol li {line-height: 1.5;}
 .entry-content ol li {margin-bottom: 10px;}
