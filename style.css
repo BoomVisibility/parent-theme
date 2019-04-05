@@ -157,6 +157,7 @@ input[type="submit"].arrow-button, input[type="button"].arrow-button, input[type
 .button, .learn-more {
 	background-color: #630a0f;
 	color: #fff;
+	line-height: 1.2;
 	padding: 6px 15px;
 	clear: both;
 	display: inline-block;
