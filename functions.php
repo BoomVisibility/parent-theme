@@ -816,3 +816,10 @@ add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
 function load_dashicons_front_end() {
 wp_enqueue_style( 'dashicons' );
 }
+
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+       global $post;
+	return '<a class="read-more" href="'. get_permalink($post->ID) . '">...</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
