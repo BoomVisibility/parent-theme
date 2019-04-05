@@ -10,14 +10,12 @@
  * @subpackage Twenty_Twelve
  * @since Twenty Twelve 1.0
  */
+get_header(); ?>
 <header class="entry-header">
 	<h1 class="entry-title"><?php printf( __( 'Author Archives: %s', 'twentytwelve' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?></h1>
 </header>
-get_header(); ?>
-
-	<section id="primary" class="site-content">
+	<div id="primary" class="site-content">
 		<div id="content" role="main">
-
 		<?php if ( have_posts() ) : ?>
 
 			<?php
@@ -66,7 +64,6 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</div><!-- #content -->
-	</section><!-- #primary -->
-
+	</div><!-- #primary -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
