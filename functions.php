@@ -607,13 +607,13 @@ register_post_type('testimonials', array(
 if ( function_exists( 'add_image_size' ) ) { 
 	//add_image_size( 'category-thumb', 300, 9999 ); //300 pixels wide (and unlimited height)
 	add_image_size( 'homepage-slider', 1600, 800, true ); //(cropped)
-	add_image_size( 'blog-thumb', 360, 360, true ); //(cropped)
+	add_image_size( 'medium-square', 360, 360, true ); //(cropped)
 }
 
 add_filter('image_size_names_choose', 'my_image_sizes');
 	function my_image_sizes($sizes) {
 		$addsizes = array(
-		"blog-thumb" => __( "Blog Thumb")
+		"medium-square" => __( "Medium Square")
 		);
 	$newsizes = array_merge($sizes, $addsizes);
 	return $newsizes;
