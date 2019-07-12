@@ -823,3 +823,9 @@ function new_excerpt_more($more) {
 	return '<a class="read-more" href="'. get_permalink($post->ID) . '">...</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+function my_gallery_default_type_set_link( $settings ) {
+    $settings['galleryDefaults']['link'] = 'file';
+    return $settings;
+}
+add_filter( 'media_view_settings', 'my_gallery_default_type_set_link');
