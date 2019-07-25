@@ -17,7 +17,7 @@
  
 get_header(); ?>
 <header class="entry-header">
-	<h1 class="page-title">Blog</h1>
+	<h1 class="page-title"><?php single_post_title(); ?></h1>
 </header>
 <div class="wrapper">
 	<div id="primary" class="site-content">
