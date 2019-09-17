@@ -66,7 +66,7 @@
 			<div class="mobile-menu"></div>
 			<div id="masthead">
 				<div class="logo">
-					<a href="<? echo site_url(); ?>"></a>
+					<a title="<?php echo bloginfo('name'); ?>" href="<?php echo site_url(); ?>"></a>
 				</div>
 			</div> <!-- #masthead -->
 			<div class="navigation-container" role="navigation">
