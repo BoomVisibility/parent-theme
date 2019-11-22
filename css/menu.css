@@ -3,7 +3,7 @@
 	.navigation-container .navigation-primary ul li {
 		display: inline-block;
 		position: relative;  }
-  	.navigation-container .navigation-primary ul li a:hover, .navigation-container .navigation-primary ul li.current-menu-item > a {
+	.navigation-container .navigation-primary ul li a:hover, .navigation-container .navigation-primary ul li.current-menu-item > a {
 		background: #cd2d2f;
 		color: #fff;}
 	.nav-menu{ position: relative; }
