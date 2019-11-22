@@ -441,17 +441,6 @@ footer a{
 .slideshow img{ width: 100%; display: block; }
 .slideshow .bx-wrapper .bx-viewport { border: 0; box-shadow: none; }
 .slideshow a { color: #fff; }
-
-.slideshow .slide .slidecaption{
-	position: absolute;
-	bottom: 0;
-	width: 100%; }
-  
-.slideshow .slide .entry p{
-	font-size: 16px;
-	color: #630a0f;
-	text-align: left; }
-
 .slideshow .slide {
 	background-size: cover;
 	background-position: top center;
