@@ -21,9 +21,10 @@ get_header(); ?>
 				$my_secondary_loop = new WP_Query('post_type=slides');
 				if( $my_secondary_loop->have_posts() ):
 				    while( $my_secondary_loop->have_posts() ): $my_secondary_loop->the_post();
+					$feat_image = wp_get_attachment_image_src( $attachment_id = get_post_thumbnail_id($post->ID),$size = 'homepage-slider' );
 				    ?>
 					<div class="slide-list">
-						<div class="slide" style="background-image: url(<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $feat_image;  ?>);" >					
+						<div class="slide" style="background-image: url(<?php echo $feat_image[0];  ?>);" >					
 							<div class="slider-content">
 								<h1><?php echo the_title();?></h1>
 								<?php echo the_content();?>
