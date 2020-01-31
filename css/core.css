@@ -196,16 +196,15 @@ video {
 
 .alignleft {
   float: left;
-  margin-right: 20px; }
+  margin: 0px 20px 15px 0px;}
 
 .alignright {
-  float: right; 
-  margin-left: 20px; }
+  float: right;
+  margin: 0px 0px 15px 20px; }
 
 .aligncenter {
   display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: 0px auto 20px auto; }
 
 .entry-content img,
 .comment-content img,
@@ -226,7 +225,7 @@ img.wp-post-image {
 .entry-caption {
   font-style: italic;
   font-size: 12px;
-  line-height: 2;
+  margin: 6px 0;
   color: #757575; }
 
 img.wp-smiley,
