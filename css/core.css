@@ -320,10 +320,9 @@ a.comment-edit-link:hover {
   margin-bottom: 24px; }
 
 /* Comment form */
-#respond {
-  margin-top: 48px; }
+#respond { }
 #respond h3#reply-title {
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.5; }
 #respond h3#reply-title #cancel-comment-reply-link {
   margin-left: 10px;
@@ -378,7 +377,7 @@ input[type="hidden"], input[type="image"], input[type="color"] {
 input[type="submit"], input[type="button"], input[type="reset"],
 article.post-password-required input[type=submit], li.bypostauthor cite span {
   padding: 6px 10px;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: normal;
   color: #7c7c7c;
   background-color: #e6e6e6;
