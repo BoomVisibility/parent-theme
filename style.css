@@ -488,7 +488,7 @@ footer a{
 
 /* Pagination */
 
-.navigation li { display: inline; }
+.navigation li { display: inline-block; margin-right: 5px;}
 .navigation li a, .navigation li a:hover, .navigation li.active a, .navigation li.disabled {text-decoration:none;}
 .navigation li a, .navigation li a:hover, .navigation li.active a, .navigation li.disabled {
 	border-radius: 3px;
