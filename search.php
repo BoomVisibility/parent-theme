@@ -3,14 +3,14 @@
  * The template for displaying Search Results pages.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Boom Visibility
+ * @since Boom Visibility 1.0
  */
 
 get_header(); ?>
 <header class="entry-header">
 	<h1 class="entry-title">
-		<?php printf( __( 'Search Results for: %s', 'twentytwelve' ), '<span>' . get_search_query() . '</span>' ); ?>
+		<?php printf( __( 'Search Results for: %s', 'boomvisibility' ), '<span>' . get_search_query() . '</span>' ); ?>
 	</h1>
 </header>
 <div class="wrapper search-page"><?php if ( have_posts() ) : ?>
@@ -29,9 +29,9 @@ get_header(); ?>
 			<article id="post-0" class="post no-results not-found">
 				<div class="entry-content">
 					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentytwelve' ); ?></h1>
+						<h1 class="entry-title"><?php _e( 'Nothing Found', 'boomvisibility' ); ?></h1>
 					</header>
-					<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'twentytwelve' ); ?></p>
+					<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'boomvisibility' ); ?></p>
 					<?php get_search_form(); ?>
 				</div><!-- .entry-content -->
 			</article><!-- #post-0 -->
