@@ -4,8 +4,8 @@
  * The default template for displaying content. Used for both single and index/archive/search.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Boom Visibility
+ * @since Boom Visibility 1.0
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -23,7 +23,7 @@
 					<a class="button" href="<?php the_permalink(); ?>">Read more &raquo; </a>
 				</div>
 				<div class="half last">
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium-square'); ?></a>
 				</div>
 			<?php else : ?>
 				<a href="<?php the_permalink(); ?>"><h2 class="blog-title"><?php the_title();?></h2></a>
