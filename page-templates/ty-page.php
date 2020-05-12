@@ -3,8 +3,8 @@
  * Template Name: Thank You Page
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Boom Visibility
+ * @since Boom Visibility 1.0
  */
 
 if(!current_user_can('edit_posts')) {
