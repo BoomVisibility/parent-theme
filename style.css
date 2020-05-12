@@ -473,16 +473,6 @@ footer a{
 
 .date {font-size: 14px;margin: 8px 0; }
 
-/* Form Styles */
-.gform_wrapper.nolabels_wrapper .top_label .gfield_label, .gform_wrapper.nolabels_wrapper .field_sublabel_below .ginput_complex.ginput_container label {display: none;}
-
-@media only screen and (min-width: 641px) {
-.gform_wrapper.nolabels_wrapper .top_label li.gfield.gf_left_half .ginput_container:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm):not(.ginput_container_date):not(.ginput_quantity):not(.datepicker),
-.gform_wrapper.nolabels_wrapper .top_label li.gfield.gf_right_half .ginput_container:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm):not(.ginput_container_date):not(.ginput_quantity):not(.datepicker) {
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0; }
-}
 
 /* Pagination */
 
