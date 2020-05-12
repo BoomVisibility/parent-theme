@@ -8,8 +8,8 @@
  * anything you'd like -- followed by front-page-only widgets in one or two columns.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Boom Visibility
+ * @since Boom Visibility 1.0
  */
 
 get_header(); ?>
@@ -37,13 +37,10 @@ get_header(); ?>
 			</section>
 			<section id="mission" class="textalign-center">
 				<div class="container">
-					<h1><?php the_field('mission_statement_title'); ?></h1>
-					<p><?php the_field('mission_statement'); ?></p>
 				</div>
 			</section>
 			<section id="homeposts">
 				<div class="container">
-					<h1><?php the_field('block_3_title'); ?></h1>
 					<div class="half"> 
 						<?php
 							$my_secondary_loop_blog = new WP_Query('post_type=post&category_name=events&posts_per_page=1');
