@@ -84,11 +84,6 @@ p {
 	margin: 1em 0; }
 p:empty { display: none; }
 
-.date{
-	font-size: 14px;
-	font-family: arial, sans-serif;
-	margin: 8px 0; }
-
 /* Links */
  
 a {
@@ -474,6 +469,8 @@ footer a{
 /* =7. Additional Page styles
 -------------------------------------------------------------- */
 /* Blog Page styles */
+
+.date {font-size: 14px;margin: 8px 0; }
 
 /* Form Styles */
 .gform_wrapper.nolabels_wrapper .top_label .gfield_label, .gform_wrapper.nolabels_wrapper .field_sublabel_below .ginput_complex.ginput_container label {display: none;}
