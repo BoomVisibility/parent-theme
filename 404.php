@@ -3,13 +3,13 @@
  * The template for displaying 404 pages (Not Found).
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Boom Visibility
+ * @since Boom Visibility 1.0
  */
 
 get_header(); ?>
 <header class="entry-header">
-	<h1 class="entry-title"><?php _e( '404 Page Not Found', 'twentytwelve' ); ?></h1>
+	<h1 class="entry-title"><?php _e( '404 Page Not Found', 'boomvisibility' ); ?></h1>
 </header>
 <div class="wrapper">
 	<div id="primary" class="site-content">
