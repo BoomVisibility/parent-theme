@@ -6,17 +6,18 @@
  * #main and #page div elements.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Boom Visibility
+ * @since Boom Visibility 1.0
  */
 ?>
 	</div><!-- #main .wrapper -->
-	
-	<div id="prefooter"><?php if ( is_active_sidebar( 'sidebar-10' ) ) : ?><?php dynamic_sidebar( 'sidebar-10' ); ?><?php endif; ?></div>
-
+	<div id="prefooter">
+		<?php if ( is_active_sidebar( 'sidebar-10' ) ) : ?>
+			<?php dynamic_sidebar( 'sidebar-10' ); ?>
+		<?php endif; ?>
+	</div>
 	<footer class="global" role="contentinfo">
-	<div class="container">
-
+		<div class="container">
 			<div class="one_third">
 				<?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
 					<?php dynamic_sidebar( 'sidebar-4' ); ?>
@@ -31,16 +32,9 @@
 				<?php if ( is_active_sidebar( 'sidebar-6' ) ) : ?>
 					<?php dynamic_sidebar( 'sidebar-6' ); ?>
 				<?php endif; ?>
-				<p>**To be removed</p>
-				<div itemscope="" itemtype="http://schema.org/HomeAndConstructionBusiness">
-<span itemprop="telephone">(610) XXX-XXXX</span>
-<span itemprop="email">email@site.com</span><br><div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">50 Main Street</span>, <span itemprop="addressLocality">Place</span>,  <span itemprop="addressRegion">PA</span> <span itemprop="postalCode">19320</span></div><p style="margin-top: 20px;"><time itemprop="openingHours" datetime="Mo,Tu,We,Th,Fr 08:30-17:30, Sa 8:30-13:00">Mon-Fri 8:30 to 5:30<br>Sat 8:30am to 1:00pm </time><br>Evening Hours by Appt</p></div>
 			</div>
-			<div class="clear"></div>
-
-	</div>
-
-<div class="clear"></div>		
+			<div class="clearboth"></div>
+		</div>	
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
