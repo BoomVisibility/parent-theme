@@ -7,14 +7,14 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Boom Visibility
+ * @since Boom Visibility 1.0
  */
 get_header(); ?>
 
 <header class="entry-header">
 	<h1 class="entry-title">
-		<?php printf( __( 'Category: %s', 'twentytwelve' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
+		<?php printf( __( 'Category: %s', 'boomvisibility' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
 	</h1>
 </header><!-- .entry-header -->
 <div class="wrapper category-page">
