@@ -11,8 +11,8 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Boom Visibility
+ * @since Boom Visibility 1.0
  */
  
 get_header(); ?>
@@ -34,7 +34,7 @@ get_header(); ?>
 					// Show a different message to a logged-in user who can add posts.
 				?>
 					<header class="entry-header">
-						<h2 class="entry-title"><?php _e( 'No posts to display', 'twentytwelve' ); ?></h2>
+						<h2 class="entry-title"><?php _e( 'No posts to display', 'boomvisibility' ); ?></h2>
 					</header>
 					<div class="entry-content">
 						<p><?php printf( __( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'twentytwelve' ), admin_url( 'post-new.php' ) ); ?></p>
@@ -43,7 +43,7 @@ get_header(); ?>
 					// Show the default message to everyone else.
 				?>
 					<header class="entry-header">
-						<h2 class="entry-title"><?php _e( 'Nothing Found', 'twentytwelve' ); ?></h2>
+						<h2 class="entry-title"><?php _e( 'Nothing Found', 'boomvisibility' ); ?></h2>
 					</header>
 					<div class="entry-content">
 						<p><?php _e( 'Apologies, but no results were found. Perhaps searching will help find a related post.', 'twentytwelve' ); ?></p>
