@@ -517,7 +517,7 @@ add_action( 'customize_preview_init', 'boomvisibility_customize_preview_js' );
 function my_scripts_method() {
 	wp_enqueue_script(
 		'easing',
-		'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js',
+		'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js',
 		array( 'jquery' ),
 		1.1,
 		true
