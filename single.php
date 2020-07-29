@@ -30,7 +30,9 @@ get_header(); ?>
 						<strong><?php _e('Tagged In:', 'wplook'); ?></strong> <?php echo get_the_tag_list('<span>',', ','</span>'); ?>
 					</div>
 				<?php } ?>
-				<?php comments_template( '', true ); ?>
+				<?php if ( comments_open() || get_comments_number() ) :
+				    comments_template();
+				endif; ?>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
