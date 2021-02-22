@@ -568,6 +568,16 @@ function my_scripts_method() {
 
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 
+/* Security Headers */
+function tg_enable_strict_transport_security_hsts_header_wordpress() {
+    header( 'Strict-Transport-Security: max-age=10886400; includeSubDomains; preload' );
+		header( 'X-XSS-Protection: 1; mode=block' );
+		header( 'X-Frame-Options: sameorigin' );
+		header( 'X-Content-Type-Options: nosniff' );
+		header( 'Content-Security-Policy: upgrade-insecure-requests' );
+}
+add_action( 'send_headers', 'tg_enable_strict_transport_security_hsts_header_wordpress' );
+
 wp_enqueue_style( 'bxslider', get_template_directory_uri() . '/css/jquery.bxslider.css' ); //our stylesheet
 
 /**custom post type for slider*/
