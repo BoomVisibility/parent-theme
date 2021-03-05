@@ -64,14 +64,14 @@
             });
         } else {
             $this.mobileNav = menu;
-            
+
             // remove ids if set
             $this.mobileNav.removeAttr('id');
             $this.mobileNav.find('*').each(function (i, e) {
                 $(e).removeAttr('id');
             });
         }
-        
+
         // remove classes if set
         if (settings.removeClasses) {
             $this.mobileNav.removeAttr('class');
@@ -172,24 +172,24 @@
             }
 
             // accessibility for links
-            item.children('a').attr('role', 'menuitem').click(function(event){
+            item.children('a').attr('role', 'menuitem').on('click', function(event){
                 //Ensure that it's not a parent
                 if (settings.closeOnClick && !$(event.target).parent().closest('li').hasClass(prefix+'_parent')) {
                         //Emulate menu close if set
-                        $($this.btn).click();
+                        $($this.btn).on('click');
                     }
             });
 
             //also close on click if parent links are set
             if (settings.closeOnClick && settings.allowParentLinks) {
-                item.children('a').children('a').click(function (event) {
+                item.children('a').children('a').on('click', function (event) {
                     //Emulate menu close
-                    $($this.btn).click();
+                    $($this.btn).on('click');
                 });
 
-                item.find('.'+prefix+'_parent-link a:not(.'+prefix+'_item)').click(function(event){
+                item.find('.'+prefix+'_parent-link a:not(.'+prefix+'_item)').on('click', function(event){
                     //Emulate menu close
-                        $($this.btn).click();
+                        $($this.btn).on('click');
                 });
             }
         });
@@ -209,16 +209,16 @@
         $this.mobileNav.attr('role','menu');
 
         // outline prevention when using mouse
-        $(document).mousedown(function(){
+        $(document).on('mousedown', function(){
             $this._outlines(false);
         });
 
-        $(document).keyup(function(){
+        $(document).on('keyup', function(){
             $this._outlines(true);
         });
 
         // menu button click
-        $($this.btn).click(function (e) {
+        $($this.btn).on('click', function (e) {
             e.preventDefault();
             $this._menuToggle();
         });
@@ -230,7 +230,7 @@
         });
 
         // check for enter key on menu button and menu parents
-        $($this.btn).keydown(function (e) {
+        $($this.btn).on('keydown', function (e) {
             var ev = e || event;
             if(ev.keyCode == 13) {
                 e.preventDefault();
@@ -248,7 +248,7 @@
 
         // allow links clickable within parent tags if set
         if (settings.allowParentLinks && settings.nestedParentLinks) {
-            $('.'+prefix+'_item a').click(function(e){
+            $('.'+prefix+'_item a').on('click', function(e){
                     e.stopImmediatePropagation();
             });
         }
@@ -334,20 +334,20 @@
             $this._setVisAttr(el, false);
         } else {
             el.addClass(prefix+'_hidden');
-            	
+
             //Fire init or beforeClose callback
             if (!init){
                 settings.beforeClose(trigger);
             }else if (trigger == 'init'){
                 settings.init();
             }
-            
+
             el.slideUp(duration, this.settings.easingClose, function() {
                 el.attr('aria-hidden','true');
                 items.attr('tabindex', '-1');
                 $this._setVisAttr(el, true);
                 el.hide(); //jQuery 1.7 bug fix
-                
+
                 $(trigger).removeClass(prefix+'_animating');
                 $(parent).removeClass(prefix+'_animating');
 
