@@ -616,7 +616,7 @@ register_post_type('testimonials', array(
 
 if ( function_exists( 'add_image_size' ) ) { 
 	//add_image_size( 'category-thumb', 300, 9999 ); //300 pixels wide (and unlimited height)
-	add_image_size( 'homepage-slider', 1600, 800, true ); //(cropped)
+	add_image_size( 'homepage-slider', 1920, 735, true ); //(cropped)
 	add_image_size( 'medium-square', 360, 360, true ); //(cropped)
 }
 
