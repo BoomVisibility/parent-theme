@@ -38,22 +38,5 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
-<?php if(is_single()) : ?>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#async=1"></script>
-<script type="text/javascript">
-	var addthisScript = document.createElement('script');
-        addthisScript.setAttribute('src', 'https://s7.addthis.com/js/300/addthis_widget.js#domready=1')
-        document.body.appendChild(addthisScript);
-    var addthis_config = addthis_config||{};
-    	// This is the 'Generic Large' code for large sharing buttons
-        addthis_config.pubid = 'ra-540a43e10e38c182';
-</script>
-<script type="text/javascript">
-    // Call this function once the rest of the document is loaded
-    function loadAddThis() {
-        addthis.init()
-    }
-</script>
-<?php endif; ?>
 </body>
 </html>
