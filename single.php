@@ -17,8 +17,12 @@ get_header(); ?>
 <div class="wrapper">
 	<div id="primary" class="site-content">
 		<div id="content" class="container small" role="main">
-			<!-- Go to www.addthis.com/dashboard to customize your tools -->
-			<div class="addthis_sharing_toolbox" data-url="<?php the_permalink(); ?>" data-title="<?php the_title(); ?>"></div>
+			<ul class="social">
+				<li>Share: </li>
+				<li class="facebook"><a href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank" rel="noopener"><span class="dashicons dashicons-facebook"></span></a></li>
+				<li class="twitter"><a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>" target="_blank" rel="noopener"><span class="dashicons dashicons-twitter"></span></a></li>
+				<li class="pinterest"><a href="https://pinterest.com/pin/create/link/?url=<?php the_permalink(); ?>" target="_blank" rel="noopener"><span class="dashicons dashicons-pinterest"></span></a></li>
+			</ul>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
