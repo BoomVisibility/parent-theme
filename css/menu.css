@@ -107,11 +107,16 @@ header.global .navigation-primary .slicknav_nav li a { margin: 0; }
 .slicknav_nav { clear: both; }
 .slicknav_nav ul, .slicknav_nav li { display: block; }
 .slicknav_nav .slicknav_arrow {
-	font-size: 1.2em;
-	margin: 0 0 0 0.4em;
-	padding: 0px 15px 4px 15px;
-	background-color: rgba(0,0,0,0.3);
-	float: right; }
+	font-size: 1.25em;
+  	margin: 0 0 0 0.4em;
+  	padding: 0 10px;
+  	background-color: rgba(0,0,0,0.3);
+  	position: absolute;
+  	line-height: 1.25em;
+  	right: 10px;
+  	top: 50%;
+  	transform: translateY(-50%); }
+a.slicknav_item.slicknav_row {position: relative;}
 a.slicknav_item.slicknav_row, ul.slicknav_nav .menu-item > a {
 	max-width:100%;
 	width: 100%; }
@@ -134,7 +139,7 @@ header.global .navigation-primary .slicknav_nav li .sub-menu a{
 	background: #cd2d2f;
 	color: #fff;
 	text-align: center; }
-.slicknav_menu ul li{ text-align: left; margin: 2px 5px;}
+.slicknav_menu ul li{ text-align: left;}
 .slicknav_menu * { box-sizing: border-box; }
 .slicknav_menu .slicknav_icon-bar { background-color: #cd2d2f; }
 .slicknav_btn {
@@ -155,7 +160,6 @@ header.global .navigation-primary .slicknav_nav li .sub-menu a{
 	overflow: hidden;
 	padding: 0;
 	margin: 0 0 0 20px; }
-.slicknav_nav .slicknav_row { margin: 2px 5px; }
 .slicknav_nav a:hover {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
