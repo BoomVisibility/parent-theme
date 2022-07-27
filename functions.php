@@ -751,6 +751,17 @@ function webtreats_formatter($content) {
 add_filter('the_content', 'webtreats_formatter', 99);
 add_filter('widget_text', 'webtreats_formatter', 99);
 
+function tg_remove_empty_paragraph_tags_from_shortcodes_wordpress( $content ) {
+    $toFix = array( 
+        '<p>['    => '[', 
+        ']</p>'   => ']', 
+        ']<br />' => ']'
+    ); 
+    return strtr( $content, $toFix );
+}
+add_filter( 'the_content', 'tg_remove_empty_paragraph_tags_from_shortcodes_wordpress' );
+
+
 // pagination on archive pages
 function wpbeginner_numeric_posts_nav() {
 
